@@ -1,0 +1,662 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* IMAGEM DE FUNDO */
+body {
+    background-color: whitesmoke;
+    font-family:sans-serif;
+}
+body::before { 
+    background-image:url(./IMAGENS/fundos/fundo\ 2\ .png);
+    content:"";
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    position:fixed;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity:10%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* LOGO */
+.logo {
+    height: 90px;
+    width: 200px;
+    display: flex;
+    justify-content: left;
+}
+.logo img {
+    border-radius: 50px;
+}
+
+
+/* MENU DE DIRECIONAMENTO */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-image: linear-gradient(rgb(12, 89, 255), rgb(66,179,229), rgb(95,188,219));
+}
+.navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.navegacao a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    margin-left: 10px;
+    padding-bottom:34px;
+    padding-top:34px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 10px;
+}
+.navegacao a:hover {
+    border-bottom:2px solid rgb(255, 255, 255);
+    color: black;
+}
+.barra-lateral{
+    height: 15px;
+    width: 3px;
+    background-color: rgba(0, 238, 255, 0.911);
+    margin: 0;
+}
+
+
+/* IMAGEM INICIAL - DIRETOS DE IMAGEM */
+.fundo-inicial {
+    height: 595px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.fundo-inicial img {
+    height: 595px;
+    width: 100vw;
+    z-index: -1;
+}
+.titulo-fundo{
+    position:absolute;
+    margin-left: 750px;
+    color: white;
+}
+.titulo-fundo img{
+    height: 140px;
+    width: 400px;
+}
+.titulo-fundo1{
+    position:absolute;
+    margin-left: 1262px;
+    margin-top: 500px;
+    color: white;
+}
+.direitos{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.direitos a {
+    font-family: 'Shantell Sans', cursive;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 500;
+}
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes-sociais a{
+    text-decoration: none;
+}
+.instagram{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 2px;
+    padding: 1px;
+}
+.instagram img{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    z-index: +1;
+}
+.instagram:hover{
+    background-color:rgb(191,45,120);
+    border-radius:9px;
+    transition: 0.5s;
+    color: white;
+}
+
+
+.section-suprema{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* PRODUTOS EM PROMOÇÃO*/
+.titulo-global-pp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', sans-serif;
+    color: rgb(58, 55, 55);
+    padding-top: 40px;
+    margin-bottom: 100px;
+}
+.titulo-global-pp h2{
+    padding: 0px;
+    border-bottom: 2px solid rgb(12,183,255);
+    padding-bottom: 10px;
+}
+.promocoes-produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:66px;
+    text-decoration: none;
+}
+.promocoes-produtos a {
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+}
+.promocoes-interno{
+    width: 250px;
+    text-align: center;
+    border-right: 2px solid rgb(12,183,255);
+}
+.promocoes-interno:last-child{
+    border-right: none;
+}
+.promocoes-interno h3{
+    color: rgb(61, 61, 61);
+    font-family:'Trebuchet MS', sans-serif;
+    padding: 1px 0px;
+    margin-bottom: 20px;
+}
+.promocoes-interno img{
+    height: 200px;
+    width: 150px;
+    border-radius: 30px;
+    margin-bottom:10px;
+}
+
+
+/* SOBRE NÓS */
+.sobre-nos{
+    color: white;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', sans-serif;
+}
+.container-black-s{
+    width: 1000px;
+    background-color:rgb(0, 0, 0);
+    height:500px;
+}
+
+/* LOJAS */
+.container-light {
+    width: 1000px;
+    background-color:rgb(221,221,221);
+}
+.titulo-global {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(58, 55, 55);
+    padding-top: 25px;
+}
+.titulo-global h2{
+    padding: 0px;
+    border-bottom: 2px solid rgb(12,183,255);
+}
+.lojas{
+    display: flex;
+    gap: 50px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+.imperial {
+    background-image:linear-gradient(to top right, rgb(0, 102, 255), rgb(0, 238, 255), rgb(0, 255, 242));
+    background-size: 300% 100%;
+    animation: degrade 5s infinite alternate;
+    padding: 10px;
+    text-align: center;
+    height:270px;
+    width: 400px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+}
+.titulo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+}
+.endereco{
+    text-align:start;
+    padding: 5px;
+    font-size: 13px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.horarios{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;  
+    font-size: 13px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.dias {
+    border-right:1px solid black;
+    padding:10px;
+}
+.dias0 {
+    border-right:1px solid black;
+    padding:15px 15px 10px 10px;
+}
+.dias1{
+    padding: 10px;
+}
+.areal {
+    background-image:linear-gradient(to top left, rgb(0, 102, 255), rgb(0, 238, 255), rgb(0, 255, 242));
+    background-size: 300% 100%;
+    animation: degrade 5s infinite alternate;
+    padding: 10px;
+    text-align: center;
+    height:300px;
+    width: 400px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+}
+.mapa{
+    width: 100%;
+    height: 350px;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mapa iframe{
+    height: 300px;
+    width: 400px;
+    border: 0px;
+    border-radius: 25px;
+}
+.compra{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.compra p {
+    padding: 10px 20px;
+    background-color: rgb(66,179,229);
+    color: white;
+    border-radius: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.compra p:hover {
+    color: black;
+}
+@keyframes degrade {
+    0%{
+        background-position-x:0% ;
+    }
+    100%{
+        background-position-x:100% ;
+    }
+}
+
+
+/* RAÇÕES */
+.container-black {
+    width: 1000px;
+    background-color:rgb(0, 0, 0);
+    height:700px;
+}
+.titulo-global-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(221,221,221);
+    padding-top: 70px;
+}
+.titulo-global-b h2{
+    padding: 10px 0px;
+    border-bottom: 2px solid rgb(12,183,255);
+    margin-bottom:100px ;
+    text-align: center;
+}
+.racoes-produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.racoes {
+    width: 240px;
+    text-align: center;
+    border-right: 2px solid white;
+    color: white;
+    font-family:'Trebuchet MS', sans-serif;
+}
+.racoes:last-child {
+    border-right: none;
+}
+.racoes h3 {
+    padding: 1px 0px;
+    margin-bottom: 20px;
+}
+.racoes img {
+    height: 200px;
+    border-radius: 30px;
+}
+.racoes p {
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom:10px ;
+}
+.container-invisivel{
+    display: none;
+    justify-content:center;
+}
+.container-invisivel.abrir{
+    display: flex;
+}
+.invisivel{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.767);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.invisivel-secundario{
+    height: 71%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.767);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.fechar{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+.fechar:hover{
+    color: red;
+}
+.invisivel-interno{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(240, 248, 255);
+    border-radius: 50px;
+    background-image: url(../imagens/fundos/LOGO-F-I.jpg);
+    background-position: center;
+    background-size:200px;
+    background-repeat: no-repeat;
+}
+.invisivel-interno p{
+    margin-bottom: 70px;
+    margin-top: 20px;
+    color: #000000;
+    font-size: 13px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* BOTÕES DE PROSSEGUIMENTOS*/
+.direcionamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    background-color: rgb(0, 183, 255);
+    margin: 15px;
+    width: 150px;
+    border-radius: 15px;
+}.direcionamento:hover{
+    background-image:linear-gradient(to top left,rgb(0, 183, 255), rgb(0, 183, 255), rgb(232,162,11),rgb(0, 183, 255), rgb(0, 183, 255));
+    background-size: 300% 100%;
+    animation: animation 1s;
+}
+.direcionamento a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+@keyframes animation {
+    0%{
+        background-position-x:0% ;
+    }
+    100%{
+        background-position-x:100% ;
+    }
+}
+
+
+/* MEDICAMENTOS */
+.titulo-global-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    padding-top: 25px;
+}
+.titulo-global-m h2{
+    padding: 10px 0px;
+    border-bottom: 2px solid rgb(12,183,255);
+    margin-bottom:65px;
+}
+.medicamentos-produtos {
+    display: flex;
+    justify-content: center;
+}
+.medicamentos {
+    width: 240px;
+    text-align: center;
+    border-right: 2px solid rgb(12,183,255);
+    color: rgb(61, 61, 61);
+    font-family:'Trebuchet MS', sans-serif;
+}
+.medicamentos:last-child {
+    border-right: none;
+}
+.medicamentos h3 {
+    padding: 1px 0px;
+    margin-bottom: 20px;
+}
+.medicamentos img {
+    height: 200px;
+    border-radius: 30px;
+}
+.medicamentos p {
+    font-size: 15px;
+    padding: 10px;
+}
+.bula {
+    margin-top: 10px;
+}
+.bula a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 30px;
+    background-color:rgb(49,86,163);
+    border-radius: 20px;
+}
+
+
+/* SUPLEMENTOS */
+.suplementos-produtos {
+    display: flex;
+    justify-content: center;
+}
+.suplementos {
+    width: 240px;
+    text-align: center;
+    border-right: 2px solid white;
+    color: white;
+    font-family:'Trebuchet MS', sans-serif;
+}
+.suplementos:last-child {
+    border-right: none;
+}
+.suplementos h3 {
+    padding: 1px 0px;
+    margin-bottom: 20px;
+}
+.suplementos img {
+    height: 200px;
+    border-radius: 30px;
+}
+.suplementos p {
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+
+/* AGROPECUÁRIA */
+.agro-produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-global-c{
+    padding: 10px 0px;
+    margin-bottom:65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+.titulo-global-c h2{
+    text-align: center;
+    border-bottom: 2px solid rgb(12,183,255);
+}
+.agro {
+    width: 350px;
+    text-align: center;
+    border-right: 2px solid rgb(12,183,255);
+    color: rgb(61, 61, 61);
+    font-family:'Trebuchet MS', sans-serif;
+}
+.agro:last-child {
+    border-right: none;
+}
+.agro h3 {
+    padding: 1px 0px;
+    margin-bottom: 20px;
+
+}
+.agro img {
+    height: 200px;
+    border-radius: 30px;   
+}
+.equinos {
+    width:200px;    
+}
+
+.agro p {
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+/* VACINAS */
+.vacina-produtos {
+    display: flex;
+    justify-content: center;
+}
+.vacina {
+    width: 240px;
+    text-align: center;
+    border-right: 2px solid white;
+    color: white;
+    font-family:'Trebuchet MS', sans-serif;
+}
+.vacina:last-child {
+    border-right: none;
+}
+.vacina h3 {
+    padding: 1px 0px;
+    margin-bottom: 20px;
+}
+.vacina img {
+    height: 200px;
+    border-radius: 30px;
+    width: 210px;
+}
+.vacina p {
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+/* RODAPÉ */
+footer {
+    height: 100px;
+    background-image: linear-gradient(  rgb(12,183,255), rgb(66,179,229));
+    display: flex;
+    justify-content: center;
+}
+.border{ 
+    height: 70px;
+    width: 2px;
+    background-color: white;
+}
+.end {
+    display: flex;
+    font-size: 12px;
+    color: rgb(5, 5, 5);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top:17px ;
+    gap: 30px;
+}
+.end img {
+    height: 50px;
+    width:200px;
+    margin-left: 20px;
+}
+.ian {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 800px;
+    width: 10%;
+    font-family:cursive;
+    font-size: 10px;
+    color: white;
+    position: absolute;
+}
