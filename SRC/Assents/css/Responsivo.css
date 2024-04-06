@@ -142,7 +142,7 @@
         height:570px;
     }
     .imperial {
-        padding: 9px;
+        padding: 5px;
         width:350px;
         margin-bottom: 15px;
         height: 260px;
@@ -153,11 +153,9 @@
     }
 
     .areal {
-        padding: 9px;
+        padding: 5px;
         width:350px;
-        margin-bottom: 5px;
         height: 260px;
-        padding-bottom: 30px;
     }
     .horarios{
         display: flex;
@@ -343,14 +341,10 @@
     }
     
     .ian {
-        display: flex;
         margin-top: 75px;
         margin-left: 300px;
         width: 20%;
-        font-family:cursive;
         font-size: 10px;
-        color: white;
-        position: absolute;
     }
 }
 
