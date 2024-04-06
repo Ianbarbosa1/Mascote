@@ -145,7 +145,7 @@
         padding: 5px;
         width:350px;
         margin-bottom: 15px;
-        height: 260px;
+        height: 230px;
     }
     .titulo {
         margin-bottom: 20px;
@@ -155,7 +155,7 @@
     .areal {
         padding: 5px;
         width:350px;
-        height: 260px;
+        height: 230px;
     }
     .horarios{
         display: flex;
