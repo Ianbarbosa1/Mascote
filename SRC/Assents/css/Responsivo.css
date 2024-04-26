@@ -80,7 +80,7 @@
 
     /* PRODUTOS EM PROMOÇÃO*/
     .titulo-global-pp {
-        padding-top: 20px;
+        padding-top: 10px;
     }
     .titulo-global-pp h2{
         padding: 5px 0px;
@@ -89,15 +89,15 @@
         padding-bottom:46px;
     }
     .promocoes-interno{
-        width: 115px;
+        width: 122px;
     }
     .promocoes-interno h3{
         font-size: 13px;
         margin-bottom: 10px;
     }
     .promocoes-interno img{
-        height: 120px;
-        width: 100px;
+        height: 160px;
+        width: 110px;
         border-radius: 30px;
         margin-bottom:10px;
     }
@@ -139,7 +139,7 @@
     }
     .lojas{
         display: block;
-        height:570px;
+        height:530px;
     }
     .imperial {
         padding: 5px;
