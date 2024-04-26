@@ -154,7 +154,7 @@ else if(hora >= 13 && hora <= 17){
     filial12.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[1]}">AREAL</a>`
 }
 else if(hora >= 18 && hora <= 23){
-    filial12.innerHTML = `<a href="https://wa.me/5521999510269?text${frase[2]}">AREAL</a>`
+    filial12.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[2]}">AREAL</a>`
 }
 
 
@@ -179,7 +179,7 @@ else if(hora >= 13 && hora <= 17){
     filial22.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[4]}">AREAL</a>`
 }
 else if(hora >= 18 && hora <= 23){
-    filial22.innerHTML = `<a href="https://wa.me/5521999510269?text${frase[5]}">AREAL</a>`
+    filial22.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[5]}">AREAL</a>`
 }
 
 //SUPLEMENTOS
@@ -203,7 +203,7 @@ else if(hora >= 13 && hora <= 17){
     filial32.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[7]}">AREAL</a>`
 }
 else if(hora >= 18 && hora <= 23){
-    filial32.innerHTML = `<a href="https://wa.me/5521999510269?text${frase[8]}">AREAL</a>`
+    filial32.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[8]}">AREAL</a>`
 }
 
 //AGROPECUÁRIO
@@ -227,7 +227,7 @@ else if(hora >= 13 && hora <= 17){
     filial42.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[10]}">AREAL</a>`
 }
 else if(hora >= 18 && hora <= 23){
-    filial42.innerHTML = `<a href="https://wa.me/5521999510269?text${frase[11]}">AREAL</a>`
+    filial42.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[11]}">AREAL</a>`
 }
 
 //VACINA
@@ -251,7 +251,7 @@ else if(hora >= 13 && hora <= 17){
     filial52.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[13]}">AREAL</a>`
 }
 else if(hora >= 18 && hora <= 23){
-    filial52.innerHTML = `<a href="https://wa.me/5521999510269?text${frase[14]}">AREAL</a>`
+    filial52.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[14]}">AREAL</a>`
 }
 
 
