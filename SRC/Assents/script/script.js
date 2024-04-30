@@ -1,6 +1,6 @@
 //hora
-let time = new Date()
-let hora = time.getHours()
+let hora = new Date().getHours()
+
 
 //PROMOÇÕES
 let firsten = document.getElementById('p1')
@@ -9,24 +9,25 @@ let trethen = document.getElementById('p3')
 let quarten = document.getElementById('p4')
 
 let promocoes = [
-    `Bom+dia,+Queria+saber+mais+da+promoção+da+goiaba+de+100,00`,
-    `Boa+tarde,+Queria+saber+mais+da+promoção+da+goiaba+de+100,00`,
-    `Boa+noite,+Queria+saber+mais+da+promoção+da+goiaba+de+100,00`,
+    `Bom+dia,+Queria+saber+mais+da+promoção+da+produto-1+de+100,00`,
+    `Boa+tarde,+Queria+saber+mais+da+promoção+da+produto-1+de+100,00`,
+    `Boa+noite,+Queria+saber+mais+da+promoção+da+produto-1+de+100,00`,
 
-    `Bom+dia,+Queria+saber+mais+da+promoção+da+banana+de+150,00`,
-    `Boa+tarde,+Queria+saber+mais+da+promoção+da+banana+de+150,00`,
-    `Boa+noite,+Queria+saber+mais+da+promoção+da+banana+de+150,00`,
+    `Bom+dia,+Queria+saber+mais+da+promoção+da+produto-2+de+150,00`,
+    `Boa+tarde,+Queria+saber+mais+da+promoção+da+produto-2+de+150,00`,
+    `Boa+noite,+Queria+saber+mais+da+promoção+da+produto-2+de+150,00`,
 
-    `Bom+dia,+Queria+saber+mais+da+promoção+do+abacate+de+200,00`,
-    `Boa+tarde,+Queria+saber+mais+da+promoção+do+abacate+de+200,00`,
-    `Boa+noite,+Queria+saber+mais+da+promoção+do+abacate+de+200,00`,
+    `Bom+dia,+Queria+saber+mais+da+promoção+do+produto-3+de+200,00`,
+    `Boa+tarde,+Queria+saber+mais+da+promoção+do+produto-3+de+200,00`,
+    `Boa+noite,+Queria+saber+mais+da+promoção+do+produto-3+de+200,00`,
 
-    `Bom+dia,+Queria+saber+mais+da+promoção+da+jujuba+de+250,00`,
-    `Boa+tarde,+Queria+saber+mais+da+promoção+da+jujuba+de+250,00`,
-    `Boa+noite,+Queria+saber+mais+da+promoção+da+jujuba+de+250,00`
+    `Bom+dia,+Queria+saber+mais+da+promoção+da+produto-4+de+250,00`,
+    `Boa+tarde,+Queria+saber+mais+da+promoção+da+prouto-4+de+250,00`,
+    `Boa+noite,+Queria+saber+mais+da+promoção+da+produto-4+de+250,00`
 ]
 
-    if(hora >= 6 && hora <= 12){
+
+if(hora >= 6 && hora <= 12){
         firsten.innerHTML = `<a href="https://wa.me/5521995462321?text=${promocoes[0]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
         seconden.innerHTML = `<a href="https://wa.me/5521995462321?text=${promocoes[3]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
         trethen.innerHTML = `<a href="https://wa.me/5521995462321?text=${promocoes[6]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
@@ -44,6 +45,12 @@ let promocoes = [
         trethen.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[8]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
         quarten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[11]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
     }
+    else if(hora >= 1 && hora <= 5){
+        firsten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[2]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
+        seconden.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[5]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
+        trethen.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[8]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
+        quarten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[11]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
+}
 
 
 /* ---ABERTURA DOS MODAIS DE ESCOLHAS--- */ 
