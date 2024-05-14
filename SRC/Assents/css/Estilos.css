@@ -62,12 +62,12 @@ body::before {
     margin-right: 10px;
 }
 .navegacao a:hover {
-    border-bottom:2px solid rgb(255, 255, 255);
+    border-bottom: 2px white solid;
     color: black;
 }
 .barra-lateral{
     height: 15px;
-    width: 3px;
+    width: 4px;
     background-color: rgba(0, 238, 255, 0.911);
     margin: 0;
 }
@@ -158,7 +158,7 @@ body::before {
     font-family:'Trebuchet MS', sans-serif;
     color: rgb(58, 55, 55);
     padding-top: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 .titulo-global-pp h2{
     padding: 0px;
@@ -169,7 +169,7 @@ body::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom:66px;
+    padding-bottom:40px;
     text-decoration: none;
 }
 .promocoes-produtos a {
