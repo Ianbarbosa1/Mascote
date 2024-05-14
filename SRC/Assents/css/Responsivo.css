@@ -1,25 +1,36 @@
-@media screen and (min-width: 300px) and (max-width:700px) {
+@media screen and (min-width: 350px) and (max-width:700px) {
     /* ---MENU--- */
     .menu {
-        width: 100vw;
-        height: 70px;
+        width: 100%;
+        height: 200px;
+        display: block;
     }
     .logo{
-        height: 45px;
-        width:45px;
-        margin:5px;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img {
+        height: 80px;
+        width: 80px;
     }
     .navegacao{
-        margin-right:0px 5px 0px 5px;
-        gap: 5px;
+        gap: 0;
+        height: 100px;
+        margin-top: 10px;
     }
     .navegacao a{
-        font-size: 9px;
-        margin-left: 5px;
-        padding-bottom:27px;
-        padding-top:27px;
-        margin-right:5px;
+        font-size: 13px;
+        padding: 40px 10px 40px 10px;
+        margin: 0px;
     }
+    .barra-lateral{
+        height: 15px;
+        width: 4px;
+        background-color: rgba(0, 238, 255, 0.911);
+    }
+    
 
 
  /* ---IMAGEM DE ENTRADA--- */
@@ -355,6 +366,7 @@
     }
     .logo{
         height: 100px;
+        width: 100px;
     }
 
     .navegacao{
@@ -362,12 +374,12 @@
     }
     .navegacao a{
         font-size: 15px;
-        padding-bottom:36px;
-        margin: 0px 10px;
+        padding-bottom:40px;
+        margin: 0px 15px;
     }
 
 
- /* ---IMAGME DE ENTRADA--- */
+ /* ---IMAGEM DE ENTRADA--- */
     .fundo-inicial{
         height:582px;
     }
@@ -375,7 +387,7 @@
         height: 582px;
     }
     .titulo-fundo{
-        margin-left: 480px;
+        margin-left: 450px;
     }
     .titulo-fundo img{
         height: 100px;
@@ -426,14 +438,14 @@
 
     /* SOBRE NÓS */
     .container-black-s{
-        width: 790px;
+        width: 750px;
         height:400px;
     }
 
 
  /* ---LOJAS--- */
     .container-light {
-        width: 790px;
+        width: 750px;
 
     }
     .titulo-global {
@@ -493,7 +505,7 @@
 
      /* ---RAÇÕES--- */
     .container-black {
-        width: 790px;
+        width: 750px;
         height: 100%;
     }
     .titulo-global-b {
@@ -630,7 +642,7 @@
     }
 }
 
-@media screen and (min-width:1000px) and (max-width: 1300px) {
+@media screen and (min-width:1001px) and (max-width: 1300px) {
     /* ---IMAGME DE ENTRADA--- */
     .fundo-inicial{
         height:582px;
