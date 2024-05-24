@@ -45,7 +45,7 @@ if(hora >= 6 && hora <= 12){
         trethen.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[8]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
         quarten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[11]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
     }
-    else if(hora >= 1 && hora <= 5){
+    else if(hora >= 0 && hora <= 5){
         firsten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[2]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
         seconden.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[5]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
         trethen.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[8]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
@@ -153,6 +153,9 @@ else if(hora >= 13 && hora <= 17){
 else if(hora >= 18 && hora <= 23){
     filial11.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[2]}">JARDIM IMPERIAL</a>`
 }
+else if(hora >= 0 && hora <= 5){
+    filial11.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[2]}">JARDIM IMPERIAL</a>`
+}
 //------
 if (hora >= 6 && hora <= 12){
     filial12.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[0]}">AREAL</a>`
@@ -163,20 +166,25 @@ else if(hora >= 13 && hora <= 17){
 else if(hora >= 18 && hora <= 23){
     filial12.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[2]}">AREAL</a>`
 }
-
+else if(hora >= 0 && hora <= 5){
+    filial12.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[2]}">AREAL</a>`
+}
 
  //MEDICAMENTOS
 let filial21 = document.getElementById('jardim-two')
 let filial22 = document.getElementById('areal-two')
 
  if (hora >= 6 && hora <= 12){
- filial21.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[3]}">JARDIM IMPERIAL</a>`
+    filial21.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[3]}">JARDIM IMPERIAL</a>`
 }
 else if(hora >= 13 && hora <= 17){
     filial21.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[4]}">JARDIM IMPERIAL</a>`
  }
 else if(hora >= 18 && hora <= 23){
- filial21.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[5]}">JARDIM IMPERIAL</a>`
+    filial21.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[5]}">JARDIM IMPERIAL</a>`
+}
+else if(hora >= 0 && hora <= 5){
+    filial21.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[5]}">JARDIM IMPERIAL</a>`
 }
 //------
 if (hora >= 6 && hora <= 12){
@@ -188,20 +196,27 @@ else if(hora >= 13 && hora <= 17){
 else if(hora >= 18 && hora <= 23){
     filial22.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[5]}">AREAL</a>`
 }
+else if(hora >= 0 && hora <= 5){
+    filial22.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[5]}">AREAL</a>`
+}
+
 
 //SUPLEMENTOS
 let filial31 = document.getElementById('jardim-tree')
 let filial32 = document.getElementById('areal-tree')
 
  if (hora >= 6 && hora <= 12){
- filial31.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[6]}">JARDIM IMPERIAL</a>`
+    filial31.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[6]}">JARDIM IMPERIAL</a>`
 }
 else if(hora >= 13 && hora <= 17){
     filial31.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[7]}">JARDIM IMPERIAL</a>`
 }
 else if(hora >= 18 && hora <= 23){
- filial31.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[8]}">JARDIM IMPERIAL</a>`
+    filial31.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[8]}">JARDIM IMPERIAL</a>`
 }
+else if(hora >= 0 && hora <= 5){
+    filial31.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[8]}">JARDIM IMPERIAL</a>`
+   }
 //------
 if (hora >= 6 && hora <= 12){
     filial32.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[6]}">AREAL</a>`
@@ -210,6 +225,9 @@ else if(hora >= 13 && hora <= 17){
     filial32.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[7]}">AREAL</a>`
 }
 else if(hora >= 18 && hora <= 23){
+    filial32.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[8]}">AREAL</a>`
+}
+else if(hora >= 0 && hora <= 5){
     filial32.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[8]}">AREAL</a>`
 }
 
@@ -226,6 +244,9 @@ else if(hora >= 13 && hora <= 17){
 else if(hora >= 18 && hora <= 23){
     filial41.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[11]}">JARDIM IMPERIAL</a>`
 }
+else if(hora >= 0 && hora <= 5){
+    filial41.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[11]}">JARDIM IMPERIAL</a>`
+}
 //------
 if (hora >= 6 && hora <= 12){
     filial42.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[9]}">AREAL</a>`
@@ -234,6 +255,9 @@ else if(hora >= 13 && hora <= 17){
     filial42.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[10]}">AREAL</a>`
 }
 else if(hora >= 18 && hora <= 23){
+    filial42.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[11]}">AREAL</a>`
+}
+else if(hora >= 0 && hora <= 5){
     filial42.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[11]}">AREAL</a>`
 }
 
@@ -250,6 +274,9 @@ else if(hora >= 13 && hora <= 17){
 else if(hora >= 18 && hora <= 23){
     filial51.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[14]}">JARDIM IMPERIAL</a>`
 }
+else if(hora >= 0 && hora <= 5){
+    filial51.innerHTML = `<a href="https://wa.me/5521995462321?text=${frase[14]}">JARDIM IMPERIAL</a>`
+}
 //------
 if (hora >= 6 && hora <= 12){
     filial52.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[12]}">AREAL</a>`
@@ -260,6 +287,6 @@ else if(hora >= 13 && hora <= 17){
 else if(hora >= 18 && hora <= 23){
     filial52.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[14]}">AREAL</a>`
 }
-
-
-
+else if(hora >= 0 && hora <= 5){
+    filial52.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[14]}">AREAL</a>`
+}
