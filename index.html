@@ -2,16 +2,105 @@
 </html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Mascote Rações E Produtos Pets</title>
-</head>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Mascote Rações E Produtos Pets</title>
   <link rel="stylesheet" href="./SRC/Assents/css/Estilos.css">
   <link rel="stylesheet" href="./SRC/Assents/css/Responsivo.css">
   <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Shantell+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="website icon"  type="jpg" href="./SRC/Assents/imagens/fundos/LOGO-U-I.jpg">
+</head>
 
 <body>
+  <!-- DIVIÇÕES INVISIVEIS -->
+  <div class="container-invisivel" id="open-one">
+    <div class="invisivel" id="invisivel">
+      <div>
+        <div id="fechar" class="fechar">✖</div>
+                  
+        <div class="invisivel-interno">
+          <div> 
+            <p>Escolha a filial mais próxima</p>
+            <div class="direcionamento" id="jardim-one"></div>
+            <div class="direcionamento" id="areal-one"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container-invisivel" id="open-two">
+    <div class="invisivel" id="invisivel">
+      <div>
+        <div id="fechar" class="fechar">✖</div>
+                
+        <div class="invisivel-interno">
+          <div> 
+            <p>Escolha a filial mais próxima</p>
+            <div class="direcionamento" id="jardim-two"></div>
+            <div class="direcionamento" id="areal-two"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-invisivel" id="open-tree">
+    <div class="invisivel" id="invisivel">
+        <div>
+          <div id="fechar" class="fechar">✖</div>
+          
+          <div class="invisivel-interno">
+            <div> 
+            <p>Escolha a filial mais próxima</p>
+            <div class="direcionamento" id="jardim-tree"></div>
+            <div class="direcionamento" id="areal-tree"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container-invisivel" id="open-four">
+    <div class="invisivel-secundario" id="invisivel">
+        <div>
+          <div id="fechar" class="fechar">✖</div>
+          
+          <div class="invisivel-interno">
+            <div> 
+            <p>Escolha a filial mais próxima</p>
+            <div class="direcionamento" id="jardim-four">  
+              
+            </div>
+            <div class="direcionamento" id="areal-four">
+
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container-invisivel" id="open-five">
+    <div class="invisivel-secundario" id="invisivel">
+        <div>
+          <div id="fechar" class="fechar">✖</div>
+          
+          <div class="invisivel-interno">
+            <div> 
+            <p>Escolha a filial mais próxima</p>
+            <div class="direcionamento" id="jardim-five">  
+              
+            </div>
+            <div class="direcionamento" id="areal-five">
+
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
 
   <!--MENU DE NAVEGAÇÃO--> 
  <div class="menu">
@@ -19,21 +108,36 @@
       <img  src="./SRC/Assents/imagens/fundos/LOGO-U-I.jpg" alt="logo-mascote">
     </div>
 
+    <div onclick="clicou()" class="menu-secudario">
+      <img src="./SRC/Assents/imagens/fundos/menu.png" alt="">
+    </div>
+    <div class="x" onclick="saiu()">
+      <img src="./SRC/Assents/imagens/fundos/X.png" alt="">
+    </div>
+
     <nav class="navegacao">
-      <a href="#lojas" >LOJAS</a>
-      <div class="barra-lateral"></div>
-      <a href="#racoes" >RAÇÕES</a>
-      <div class="barra-lateral"></div>
-      <a href="#medicamentos" >MEDICAMENTOS</a>
-      <div class="barra-lateral"></div>
-      <a href="#suplementos" >SUPLEMENTOS</a>
-      <div class="barra-lateral"></div>
-      <a href="#agro" >AGRO</a>
-      <div class="barra-lateral"></div>
-      <a href="#vacinas" >VACINAS</a>
+      <a href="#lojas">
+        <div>LOJAS</div>
+      </a>
+      <a href="#racoes">
+        <div>RAÇÕES</div> 
+      </a>
+      <a href="#medicamentos">
+        <div>MEDICAMENTOS</div>
+      </a>
+      <a href="#suplementos">
+        <div>SUPLEMENTOS</div>
+      </a>
+      <a href="#agro">
+        <div>AGRO</div>
+      </a>
+      <a href="#vacinas" class="last">
+        <div>VACINAS</div>
+      </a>
     </nav>
   </div>
  
+
   <!--IMAGEM INICIAL-->  
   <section>
     <div  class="fundo-inicial"> 
@@ -61,44 +165,45 @@
     </div>
   </section>
 
-  <div class="section-suprema">  
-    <div>
 
-      <!--PROMOÇÕES--> 
-      <section class="container-light">
+  <div>  
+    <!--PROMOÇÕES--> 
+    <section class="controle-1">
+      <section class="container-light-promocao">
         <div class="titulo-global-pp">
           <h2>PROMOÇÕES (SEMANAIS-MENSAIS)</h2>
         </div> 
         <div class="promocoes-produtos">     
           <div class="promocoes-interno">
-              <h3>PRODUTO-1</h3>
+              <h3>PITTY</h3>
               <a href="" id="p1"> </a>
           </div>
 
           <div class="promocoes-interno">
-            <h3>PRODUTO-2</h3>
+            <h3>FOSTER</h3>
             <a href="" id="p2">
             </a>
           </div>
 
           <div class="promocoes-interno">
-            <h3>PRODUTO-3</h3>
+            <h3>MATILHA</h3>
             <a href="" id="p3">
             </a>
           </div>
 
           <div class="promocoes-interno">
-            <h3>PRODUTO-4</h3>
+            <h3>MILHO</h3>
             <a href="" id="p4">
             </a>
           </div>
-            
         </div>
-
       </section>
+    </section>
 
-      <!--SOBRE NÓS-->  
-      <section class="container-black-s"> 
+
+    <!--SOBRE NÓS-->  
+    <section class="controle-2"> 
+      <section class="container-black-sobre-nos"> 
 
         <div class="titulo-global-b">
           <h2> SOBRE NÓS </h2>
@@ -108,96 +213,102 @@
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat voluptatem in corporis vero odio impedit, nihil repudiandae, itaque modi, porro consectetur ratione nobis? Laudantium dolore, dolor distinctio accusamus ipsam ducimus quidem error saepe praesentium maxime sunt natus? Molestiae similique inventore delectus earum id, at rem necessitatibus. Eaque consequatur debitis magnam!</p>
         <div>
       </section>
+    </section>
 
-      <!--LOJAS--> 
-      <section class="container-light">
-        <div class="titulo-global">
-          <h2 id="lojas"> NOSSAS LOJAS </h2>
+
+    <!--LOJAS--> 
+    <section class="controle-3" id="lojas">
+      <section class="container-light-lojas">
+        <div class="titulo-global-loja">
+          <h2>NOSSAS LOJAS </h2>
         </div> 
 
         <div class="container-loja"> 
           <div class="lojas">
-            <div class="imperial">
-              <h1 class="titulo">MASCOTE JARDIM IMPERIAL</h1>
-              <p class="endereco"> 
-                <b>Endereço: </b><br> Rua Promotor Ciro Olimpo da Mata</p>
-              <p class="endereco"><b>Numero:</b>  18</p>
-              <P class="endereco"> <b>Ponto de referência:</b><br>Descida do CEVI, ao lado do Açougue do CELI</P>
-              <div class="horarios"> 
-                <p class="dias"> Segunda a Sexta <br>
-                08:00 ás 19:00</p>
-                <div class="divisoria"></div>
 
-                <p class="dias">Sabado <br>
-                08:00 ás 17:00</p>
-                <div class="divisoria"></div>
+            <div class="loja-i-a">
+              <div class="titulo-loja"> 
+                <div> 
+                  <h1 class="titulo">MASCOTE JARDIM IMPERIAL</h1>
+                  <div class="barra-loja"></div>
+                </div>
+              </div>
 
-                <p class="dias">Domingo <br>
-                  08:00 ás 12:00</p>
+              <div class="endereco-imperial"> 
+                <p> <b>Endereço: </b><br> Rua Promotor Ciro Olimpo da Mata</p>
+                <p> <b>Numero:</b>  18</p>
+                <P> <b>Ponto de referência:</b><br>Descida do CEVI, ao lado do Açougue do CELI</P>
+              </div>
+              <div class="control"> 
+                <div> 
+                  <div class="horarios"> 
+                    <p> Segunda a Sexta <br> 08:00 ás 19:00</p>
+                    <p class="dias">-</p>
+                    <p>Sabado <br> 08:00 ás 17:00</p>
+                    <p class="dias">-</p>
+                    <p>Domingo <br> 08:00 ás 12:00</p>
+                  </div>
+
+                  <div class="localizacao-jardim">
+                      <a href="https://www.google.com.br/maps/place/Mascote+Ra%C3%A7%C3%B5es+e+Produtos+Pets/@-22.7437339,-42.8565297,17z/data=!4m6!3m5!1s0x99c1340f61e377:0x243b7c674e8b4612!8m2!3d-22.7437339!4d-42.8565297!16s%2Fg%2F11hyq1v9r5?entry=ttu"> 
+                        <img src="./SRC/Assents/imagens/fundos/localizacao.png" alt="">
+                        <p>Localização</p>
+                      </a>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="areal"> 
-                <h1 class="titulo">MASCOTE AREAL</h1>
-              <p class="endereco"> <b>Endereço:</b><br>Av. Carlos Lacerda </p>
-              <p class="endereco"><b>Lote:</b>  01</p>
-              <P class="endereco"> <b> Ponto de referência:</b> <br> Ao lado da AABB</P>
-              <div class="horarios">  
-                <p class="dias"> Segunda a Sexta <br>
-                  08:00 ás 18:30</p>
-                  <div class="divisoria"></div>
-
-                  <p class="dias">Sabado <br>
-                  08:00 ás 17:00</p>
-                  <div class="divisoria"></div>
-
-                  <p class="dias">Domingo <br>
-                    Fechado </p>
+            <div class="loja-i-a"> 
+              <div class="titulo-loja"> 
+                <div> 
+                  <h1 class="titulo">MASCOTE AREAL</h1>
+                  <div class="barra-loja"></div>
+                </div>
+              </div>
+              <div class="endereco-areal"> 
+                <p> <b>Endereço:</b> <br> Av. Carlos Lacerda </p>
+                <p> <b>Lote:</b>  01</p>
+                <P> <b> Ponto de referência:</b> <br> Ao lado da AABB</P>
+              </div>
+              <div class="control">
+                  <div> 
+                    <div class="horarios">  
+                      <p> Segunda a Sexta <br> 08:00 ás 18:30</p>
+                        <p class="dias">-</p>
+                        <p>Sabado <br> 08:00 ás 17:00</p>
+                        <p class="dias">-</p>
+                        <p>Domingo <br> Fechado </p>
+                    </div>
+                  
+                  
+                    <div class="localizacao-last"> 
+                      <div class="localizacao-areal">
+                        <a href="https://www.google.com.br/maps/@-22.7250234,-42.856684,3a,75y,74.81h,97.17t/data=!3m6!1e1!3m4!1sqg2AxrwR6Tm2sx7KSLjS3g!2e0!7i16384!8i8192?coh=205409&entry=ttu"> 
+                          <img src="./SRC/Assents/imagens/fundos/localizacao.png" alt="">
+                          <p>Localização</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
               </div>
             </div> 
           </div>
         </div>
-
-        <div class="container-mapa">
-          <div class="mapa">
-            <div class="mapa-1">  
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.6052745820366!2d-42.85501800000001!3d-22.7429083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99c11bd3cf7cf7%3A0x4651384e81e102d6!2sMascote%20Ra%C3%A7%C3%B5es%20e%20Produtos%20Pets!5e0!3m2!1spt-BR!2sbr!4v1702576569980!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-            <div class="mapa-1">  
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.095553278543!2d-42.85923892376915!3d-22.724689531390208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99c087088e3e87%3A0x46230eefe78c7520!2sAv.%20Carlos%20Lacerda%2C%202440%20-%20Vila%20Rica%2C%20Itabora%C3%AD%20-%20RJ%2C%2024800-738!5e0!3m2!1spt-BR!2sbr!4v1702575572518!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-        </div>
       </section>
+    </section>
 
-      <!--RAÇÕES-->  
+
+    <!--RAÇÕES--> 
+    <section class="controle-black" id="racoes"> 
       <section class="container-black"> 
-
-        <div class="container-invisivel" id="open-one">
-          <div class="invisivel" id="invisivel">
-              <div>
-                <div id="fechar" class="fechar">✖</div>
-                
-                <div class="invisivel-interno">
-                  <div> 
-                  <p>Escolha a filial mais próxima</p>
-                  <div class="direcionamento" id="jardim-one">  
-                  </div>
-                  <div class="direcionamento" id="areal-one">
-                  </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-
+        
         <div class="titulo-global-b">
-          <h2 id="racoes"> PRINCIPAIS RAÇÕES </h2>
+          <h2> PRINCIPAIS RAÇÕES </h2>
         </div> 
 
-        <div class="racoes-produtos">
-          <div class="racoes">
+        <div class="produtos-black">
+          <div class="produto">
             <h3>MATILHA</h3>
             <img src="./SRC/Assents/imagens/produtos/cachorro/matilha.jpg" alt="">
             <p>Proteina: 22%</p>
@@ -205,7 +316,7 @@
             <p>Fabricante: Du bom</p>
           </div>
 
-          <div class="racoes">
+          <div class="produto">
             <h3>MENDOG</h3>
             <img src="./SRC/Assents/imagens/produtos/cachorro/mendog.jpg" alt="">
             <p>Proteina: 28%</p>
@@ -213,14 +324,14 @@
             <p>Fabricante: MenPet</p>
           </div>
 
-          <div class="racoes">
+          <div class="produto">
             <h3>FAMINTUS</h3>
             <img src="./SRC/Assents/imagens/produtos/cachorro/famintus.jpg" alt="">
             <p>Proteina: 21%</p>
             <p>Extrato Etério: 10%</p>
             <p>Fabricante: MenPet</p>
           </div>
-          <div class="racoes">
+          <div class="produto">
             <h3>FOSTER</h3>
             <img src="./SRC/Assents/imagens/produtos/cachorro/foster.png" alt="">
             <p>Proteina: 22%</p>
@@ -233,32 +344,15 @@
           <p onclick="AbRacoes()">SAIBA MAIS</p>
         </div>
       </section>
+    </section>
 
-      <!--MEDICAMENTOS-->  
+
+    <!--MEDICAMENTOS-->  
+    <section class="controle-5" id="medicamentos">
       <section class="container-light" >
 
-        <div class="container-invisivel" id="open-two">
-          <div class="invisivel" id="invisivel">
-              <div>
-                <div id="fechar" class="fechar">✖</div>
-                
-                <div class="invisivel-interno">
-                  <div> 
-                  <p>Escolha a filial mais próxima</p>
-                  <div class="direcionamento" id="jardim-two">  
-
-                  </div>
-                  <div class="direcionamento" id="areal-two">
-
-                  </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-
         <div class="titulo-global-m">
-          <h2 id="medicamentos"> PRINCIPAIS MEDICAMENTOS </h2>
+          <h2> PRINCIPAIS MEDICAMENTOS </h2>
         </div> 
 
         <div class="medicamentos-produtos">
@@ -314,60 +408,43 @@
           <p onclick="AbMedicamentos()">SAIBA MAIS</p>
         </div>
       </section>
+    </section>
 
-      <!--SUPLEMENTOS-->  
+
+    <!--SUPLEMENTOS-->
+    <section class="controle-black" id="suplementos"> 
       <section class="container-black">
 
-        <div class="container-invisivel" id="open-tree">
-          <div class="invisivel" id="invisivel">
-              <div>
-                <div id="fechar" class="fechar">✖</div>
-                
-                <div class="invisivel-interno">
-                  <div> 
-                  <p>Escolha a filial mais próxima</p>
-                  <div class="direcionamento" id="jardim-tree">  
-                    
-                  </div>
-                  <div class="direcionamento" id="areal-tree">
-
-                  </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-
         <div class="titulo-global-b">
-          <h2 id="suplementos"> PRINCIPAIS SUPLEMENTOS </h2>
+          <h2> PRINCIPAIS SUPLEMENTOS </h2>
         </div> 
 
-        <div class="suplementos-produtos">
-          <div class="suplementos">
+        <div class="produtos-black">
+          <div class="produto">
             <h3>HEMOCELL</h3>
             <img src="./SRC/Assents/imagens/produtos/suplementos/hemocell.jpg" alt="">
-            <p>Especifico: Bovinos e Equinos</p>
+            <p>Especifico: <br> Bovinos e Equinos</p>
             <p>Tamanho: 1LT</p>
           </div>
 
-          <div class="suplementos">
+          <div class="produto">
             <h3>ORGANEW</h3>
             <img src="./SRC/Assents/imagens/produtos/suplementos/organew.jpg" alt="">
-            <p>Especifico: Bovinos e Equinos</p>
+            <p>Especifico: <br> Bovinos e Equinos</p>
             <p>Tamanho: 1KG</p>
           </div>
 
-          <div class="suplementos">
+          <div class="produto">
             <h3>LINOPLUS</h3>
             <img src="./SRC/Assents/imagens/produtos/suplementos/linoplus.jpg" alt="">
-            <p>Especifico: Cães e Gatos</p>
-            <p>Tamanho: 400ml e 180ml</p>
+            <p>Especifico: <br> Cães e Gatos</p>
+            <p>Tamanho: 400ml</p>
           </div>
 
-          <div class="suplementos">
+          <div class="produto">
             <h3>CEVAVITA</h3>
             <img src="./SRC/Assents/imagens/produtos/suplementos/cevavita.jpg" alt="">
-            <p>Especifico: Cães e Gatos</p>
+            <p>Especifico: <br> Cães e Gatos</p>
             <p>Tamanho: 200g</p>
           </div>
         </div>
@@ -376,32 +453,15 @@
           <p onclick="AbSuplementos()">SAIBA MAIS</p>
         </div>
       </section>
+    </section> 
 
-      <!--AGROPECUÁRIA-->  
+
+    <!--AGROPECUÁRIA-->
+    <section class="controle-7" id="agro">   
       <section class="container-light" >
 
-        <div class="container-invisivel" id="open-four">
-          <div class="invisivel-secundario" id="invisivel">
-              <div>
-                <div id="fechar" class="fechar">✖</div>
-                
-                <div class="invisivel-interno">
-                  <div> 
-                  <p>Escolha a filial mais próxima</p>
-                  <div class="direcionamento" id="jardim-four">  
-                    
-                  </div>
-                  <div class="direcionamento" id="areal-four">
-
-                  </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-
         <div class="titulo-global-c">
-          <h2 id="agro"> AGROPECUÁRIA </h2>
+          <h2> AGROPECUÁRIA </h2>
         </div> 
 
         <div class="agro-produtos">
@@ -426,40 +486,22 @@
           <p onclick="AbAgro()">SAIBA MAIS</p>
         </div>
       </section>
-
-      <!--VACINA-->  
+    </section>
+      
+    <!--VACINA-->  
+    <section class="controle-black" id="vacinas">   
       <section class="container-black">
 
-        <div class="container-invisivel" id="open-five">
-          <div class="invisivel-secundario" id="invisivel">
-              <div>
-                <div id="fechar" class="fechar">✖</div>
-                
-                <div class="invisivel-interno">
-                  <div> 
-                  <p>Escolha a filial mais próxima</p>
-                  <div class="direcionamento" id="jardim-five">  
-                    
-                  </div>
-                  <div class="direcionamento" id="areal-five">
-
-                  </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-
         <div class="titulo-global-b">
-          <h2 id="vacinas"> VACINAS </h2>
+          <h2> VACINAS </h2>
         </div> 
 
-        <div class="vacina-produtos">
+        <div class="produtos-black">
           <div class="vacina">
             <h3>V-11</h3>
             <img src="./SRC/Assents/imagens/produtos/vacinas/v11.jpg" alt="">
             <p>Especifico: Cães</p>
-            <p>Vacina combinada contra a Cinomose, Hepatite infecciosa, Adenovirose, Parvovirose, Parainfluenza, Coronavirose e Leptospirose canina.</p>
+            <p>Vacina combinada contra a Cinomose, Hepatite infecciosa, Adenovirose, Parvovirose, Parainfluenza, Coronavirose e Leptospirose.</p>
           </div>
 
           <div class="vacina">
@@ -489,7 +531,7 @@
           <p onclick="AbVacinas()">SAIBA MAIS</p>
         </div>
       </section>
-    </div>
+    </section>
   </div>
 
 
@@ -512,6 +554,5 @@
   </footer>
 
   <script src="./SRC/Assents/script/script.js"></script>
-
 </body>
 </html>
