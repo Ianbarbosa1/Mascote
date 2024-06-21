@@ -2,37 +2,39 @@
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
+
 }
+
 
 /* IMAGEM DE FUNDO */
 body {
-    background-color: whitesmoke;
+    background-color: rgb(247,247,247);
     font-family:sans-serif;
 }
-body::before { 
-    background-image:url(./IMAGENS/fundos/fundo\ 2\ .png);
-    content:"";
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
-    position:fixed;
-    z-index: -1;
+
+
+body::before{
+    background-image: url(../imagens/fundos/LOGO\ VERTICAL.jpg);
+    content: '';
     height: 100%;
     width: 100%;
-    opacity:10%;
-    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: -99;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
 /* LOGO */
 .logo {
-    height: 90px;
+    height: 110px;
     width: 200px;
     display: flex;
     justify-content: left;
 }
 .logo img {
-    border-radius: 50px;
+    border-radius: 70px;
 }
 
 
@@ -41,55 +43,61 @@ body::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 115px;
     background-image: linear-gradient(rgb(12, 89, 255), rgb(66,179,229), rgb(95,188,219));
 }
 .navegacao{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    background-color: rgba(20, 17, 17, 0.384);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding:8px;
 }
-.navegacao a {
-    list-style: none;
+.navegacao a{
     text-decoration: none;
-    font-size: 20px;
+    list-style: none;
+}
+.navegacao a div{
+    font-size: 18px;
     color:white;
-    margin-left: 10px;
-    padding-bottom:34px;
-    padding-top:34px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-right: 10px;
+    border-right: 1px solid white;
+    padding: 17px 35px;
 }
-.navegacao a:hover {
-    border-bottom: 2px white solid;
+.navegacao .last div{
+    border-right: none;
+}
+.navegacao a div:hover {
     color: black;
+    padding: 17px 35px;
+    transition: 1s;
 }
-.barra-lateral{
-    height: 15px;
-    width: 4px;
-    background-color: rgba(0, 238, 255, 0.911);
-    margin: 0;
+.menu-secudario{
+    display: none;
+}
+.x{
+    display: none;
 }
 
 
 /* IMAGEM INICIAL - DIRETOS DE IMAGEM */
 .fundo-inicial {
-    height: 595px;
+    height: 88vh;
     display: flex;
     justify-content: center;
     align-items: center;
  
 }
 .fundo-inicial img {
-    height: 595px;
+    height: 88vh;
     width: 100vw;
     z-index: -1;
 }
 .titulo-fundo{
     position:absolute;
-    margin-left: 750px;
-    color: white;
+    right:250px
 }
 .titulo-fundo img{
     height: 140px;
@@ -97,8 +105,8 @@ body::before {
 }
 .titulo-fundo1{
     position:absolute;
-    margin-left: 1262px;
-    margin-top: 500px;
+    bottom: 10px;
+    right: 20px;
     color: white;
 }
 .direitos{
@@ -143,236 +151,7 @@ body::before {
 }
 
 
-.section-suprema{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* PRODUTOS EM PROMOÇÃO*/
-.titulo-global-pp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family:'Trebuchet MS', sans-serif;
-    color: rgb(58, 55, 55);
-    padding-top: 40px;
-    margin-bottom: 80px;
-}
-.titulo-global-pp h2{
-    padding: 0px;
-    border-bottom: 2px solid rgb(12,183,255);
-    padding-bottom: 10px;
-}
-.promocoes-produtos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom:40px;
-    text-decoration: none;
-}
-.promocoes-produtos a {
-    text-decoration: none;
-    color: rgb(61, 61, 61);
-}
-.promocoes-interno{
-    width: 250px;
-    text-align: center;
-    border-right: 2px solid rgb(12,183,255);
-}
-.promocoes-interno:last-child{
-    border-right: none;
-}
-.promocoes-interno h3{
-    color: rgb(61, 61, 61);
-    font-family:'Trebuchet MS', sans-serif;
-    padding: 1px 0px;
-    margin-bottom: 20px;
-}
-.promocoes-interno img{
-    height: 200px;
-    width: 150px;
-    border-radius: 30px;
-    margin-bottom:10px;
-}
-
-
-/* SOBRE NÓS */
-.sobre-nos{
-    color: white;
-    text-align: center;
-    padding: 20px 20px 20px 20px;
-    font-size: 20px;
-    font-family:'Trebuchet MS', sans-serif;
-}
-.container-black-s{
-    width: 1000px;
-    background-color:rgb(0, 0, 0);
-    height:500px;
-}
-
-/* LOJAS */
-.container-light {
-    width: 1000px;
-    background-color:rgb(221,221,221);
-}
-.titulo-global {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(58, 55, 55);
-    padding-top: 25px;
-}
-.titulo-global h2{
-    padding: 0px;
-    border-bottom: 2px solid rgb(12,183,255);
-}
-.lojas{
-    display: flex;
-    gap: 50px;
-    height: 350px;
-    justify-content: center;
-    align-items: center;
-}
-.imperial {
-    background-image:linear-gradient(to top right, rgb(0, 102, 255), rgb(0, 238, 255), rgb(0, 255, 242));
-    background-size: 300% 100%;
-    animation: degrade 5s infinite alternate;
-    padding: 10px;
-    text-align: center;
-    height:270px;
-    width: 400px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 50px;
-}
-.titulo {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 15px;
-}
-.endereco{
-    text-align:start;
-    padding: 5px;
-    font-size: 13px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.horarios{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.dias {
-    padding:5px;
-}
-.divisoria{
-    height:35px;
-    width: 3px;
-    margin: 0px 10px;
-    background-color: white;
-}
-.areal {
-    background-image:linear-gradient(to top left, rgb(0, 102, 255), rgb(0, 238, 255), rgb(0, 255, 242));
-    background-size: 300% 100%;
-    animation: degrade 5s infinite alternate;
-    padding: 10px;
-    text-align: center;
-    height:270px;
-    width: 400px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 50px;
-}
-.mapa{
-    width: 100%;
-    height: 350px;
-    gap: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.mapa iframe{
-    height: 300px;
-    width: 400px;
-    border: 0px;
-    border-radius: 25px;
-}
-.compra{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.compra p {
-    padding: 10px 20px;
-    background-color: rgb(66,179,229);
-    color: white;
-    border-radius: 15px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-.compra p:hover {
-    color: black;
-}
-@keyframes degrade {
-    0%{
-        background-position-x:0% ;
-    }
-    100%{
-        background-position-x:100% ;
-    }
-}
-
-
-/* RAÇÕES */
-.container-black {
-    width: 1000px;
-    background-color:rgb(0, 0, 0);
-    height:700px;
-}
-.titulo-global-b {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(221,221,221);
-    padding-top: 70px;
-}
-.titulo-global-b h2{
-    padding: 10px 0px;
-    border-bottom: 2px solid rgb(12,183,255);
-    margin-bottom:100px ;
-    text-align: center;
-}
-.racoes-produtos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.racoes {
-    width: 240px;
-    text-align: center;
-    border-right: 2px solid white;
-    color: white;
-    font-family:'Trebuchet MS', sans-serif;
-}
-.racoes:last-child {
-    border-right: none;
-}
-.racoes h3 {
-    padding: 1px 0px;
-    margin-bottom: 20px;
-}
-.racoes img {
-    height: 200px;
-    border-radius: 30px;
-}
-.racoes p {
-    font-size: 15px;
-    padding: 10px;
-    margin-bottom:10px ;
-}
+/*DIVISÃO INVISIVEL*/
 .container-invisivel{
     display: none;
     justify-content:center;
@@ -384,23 +163,24 @@ body::before {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.767);
-    position: absolute;
+    position:fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 13px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index:100;
 }
 .invisivel-secundario{
-    height: 71%;
+    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.767);
-    position: absolute;
+    position:fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 13px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index:100;
 }
 .fechar{
     display: flex;
@@ -454,36 +234,329 @@ body::before {
     color: white;
     padding: 10px;
 }
-@keyframes animation {
-    0%{
-        background-position-x:0% ;
-    }
-    100%{
-        background-position-x:100% ;
-    }
+
+
+/* PRODUTOS EM PROMOÇÃO*/
+.controle-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-light-promocao {
+    width: 1000px;
+    background-color:rgba(221, 221, 221, 0.521);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 50vh;
+    backdrop-filter: blur(10px);
+}
+.titulo-global-pp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', sans-serif;
+    color: rgb(58, 55, 55);
+    padding-top: 40px;
+    margin-bottom: 80px;
+    font-size: 20px;
+}
+.titulo-global-pp h2{
+    padding: 0px;
+    border-bottom: 2px solid rgb(12,183,255);
+    padding-bottom: 10px; 
+}
+.promocoes-produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:40px;
+}
+.promocoes-produtos a {
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+}
+.promocoes-interno{
+    width: 250px;
+    text-align: center;
+    border-right: 2px solid rgb(12,183,255);
+}
+.promocoes-interno:last-child{
+    border-right: none;
+}
+.promocoes-interno h3{
+    color: rgb(61, 61, 61);
+    font-family:'Trebuchet MS', sans-serif;
+    padding: 1px 0px;
+    margin-bottom: 20px;
+}
+.promocoes-interno img{
+    height: 200px;
+    width: 150px;
+    border-radius: 30px;
+    margin-bottom:10px;
+}
+
+
+/* SOBRE NÓS */
+.controle-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sobre-nos{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', sans-serif;
+}
+.container-black-sobre-nos{
+    width: 1000px;
+    background-color:rgba(0, 0, 0, 0.753);
+    backdrop-filter: blur(20px);
+    height: 50vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+/* LOJAS */
+.controle-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-light-lojas{
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(221, 221, 221, 0.568);
+    border-radius: 10%;
+    backdrop-filter: blur(10px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.titulo-global-loja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(58, 55, 55);
+    padding-top: 100px;
+    padding-bottom:100px ;
+    font-size: 20px;
+}
+.titulo-global-loja h2{
+    padding: 0px;
+    border-bottom: 3px solid rgb(12,183,255);
+}
+.lojas{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.loja-i-a{
+    padding: 10px;
+    text-align: center;
+}
+.titulo-loja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    font-size:25px;
+}
+.barra-loja{
+    height: 5px;
+    width: 150px;
+    background-image:linear-gradient(to left, rgb(47, 0, 255), rgb(0, 102, 255), rgb(0, 102, 255), rgb(0, 174, 255), rgb(0, 204, 255) );
+    background-size: 300% 100%;
+    animation: degrade 20s infinite alternate;
+    margin-bottom: 50px;
+}
+.endereco-imperial p{
+    border-left: 5px solid rgb(209, 124, 96);
+    margin-right: 250px;
+    text-align:start;
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.endereco-areal p{
+    border-right: 5px solid rgb(209, 124, 96);
+    margin-left: 250px;
+    text-align:end;
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.dias{
+    font-size: 30px;
+    color: white;     
+}
+.horarios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 100px;
+    gap: 25px;
+    height: 70px;
+    width: 500px;
+    background-color:rgba(0, 0, 0, 0.103);
+    border-radius: 50px;
+}
+.localizacao-jardim a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    height: 40px;
+    gap: 10px;
+    width: 200px;
+    border-radius:10px ;
+    margin-top: 20px;
+    background-color: #00000057;
+}
+.localizacao-jardim a:hover{
+    background-color: #0000002f;
+}
+.localizacao-areal a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    height: 40px;
+    gap: 10px;
+    width: 200px;
+    border-radius:10px ;
+    margin-top: 20px;
+    background-color: #00000057;
+    margin-left: 300px;
+}
+.localizacao-areal a:hover{
+    background-color: #0000002f;
+}
+
+
+/* BOTÃO DE SAIBA MAIS */
+.compra{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.compra p {
+    padding: 10px 20px;
+    background-color: rgb(66,179,229);
+    color: white;
+    border-radius: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    cursor: pointer;
+    background-image:linear-gradient(to right,rgb(0, 183, 255), rgb(0, 183, 255), rgb(255, 255, 255),rgb(0, 183, 255), rgb(0, 183, 255));
+    background-size: 300% 100%;
+    animation: animation 5s infinite;
+}
+.compra p:hover {
+    color: black;
+    padding: 11px 21px;
+}
+
+
+/* RAÇÕES */
+.controle-black{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-black{
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.877);
+    height:100vh;
+    backdrop-filter: blur(20px);
+    border-radius: 10%;
+}
+.titulo-global-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(221,221,221);
+    padding-top: 100px;
+    font-size: 20px;
+}
+.titulo-global-b h2{
+    padding: 10px 0px;
+    border-bottom: 2px solid rgb(12,183,255);
+    margin-bottom:100px;
+    text-align: center;
+}
+.produtos-black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.produto{
+    width: 400px;
+    text-align: center;
+    border-right: 2px solid white;
+    color: white;
+    font-family:'Trebuchet MS', sans-serif;
+}
+.produto:last-child {
+    border-right: none;
+}
+.produto h3 {
+    padding: 1px 0px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.produto img {
+    height: 300px;
+    border-radius: 20px;
+}
+.produto p {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom:10px;
 }
 
 
 /* MEDICAMENTOS */
+.controle-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-light{
+    width: 100%;
+    height: 100vh;
+    background-color: #dddddd73;
+    backdrop-filter: blur(20px);
+    border-radius: 10%;
+}
 .titulo-global-m {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(0, 0, 0);
-    padding-top: 25px;
+    padding-top: 100px;
+    font-size: 20px;
 }
 .titulo-global-m h2{
     padding: 10px 0px;
     border-bottom: 2px solid rgb(12,183,255);
-    margin-bottom:65px;
+    margin-bottom:100px;
+    text-align: center;
 }
 .medicamentos-produtos {
     display: flex;
     justify-content: center;
 }
 .medicamentos {
-    width: 240px;
+    width: 400px;
     text-align: center;
     border-right: 2px solid rgb(12,183,255);
     color: rgb(61, 61, 61);
@@ -494,14 +567,15 @@ body::before {
 }
 .medicamentos h3 {
     padding: 1px 0px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    font-size: 20px;
 }
 .medicamentos img {
-    height: 200px;
-    border-radius: 30px;
+    height: 250px;
+    border-radius: 20px;
 }
 .medicamentos p {
-    font-size: 15px;
+    font-size: 18px;
     padding: 10px;
 }
 .bula {
@@ -514,39 +588,17 @@ body::before {
     background-color:rgb(49,86,163);
     border-radius: 20px;
 }
-
-
-/* SUPLEMENTOS */
-.suplementos-produtos {
-    display: flex;
-    justify-content: center;
-}
-.suplementos {
-    width: 240px;
-    text-align: center;
-    border-right: 2px solid white;
-    color: white;
-    font-family:'Trebuchet MS', sans-serif;
-}
-.suplementos:last-child {
-    border-right: none;
-}
-.suplementos h3 {
-    padding: 1px 0px;
-    margin-bottom: 20px;
-}
-.suplementos img {
-    height: 200px;
-    border-radius: 30px;
-}
-.suplementos p {
-    font-size: 15px;
-    padding: 5px;
-    margin-bottom: 30px;
+.bula a:hover{
+    color: rgba(0, 0, 0, 0.877);
 }
 
 
 /* AGROPECUÁRIA */
+.controle-7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .agro-produtos {
     display: flex;
     justify-content: center;
@@ -558,14 +610,15 @@ body::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 150px;
+    font-size: 20px;
 }
 .titulo-global-c h2{
     text-align: center;
     border-bottom: 2px solid rgb(12,183,255);
 }
 .agro {
-    width: 350px;
+    width: 500px;
     text-align: center;
     border-right: 2px solid rgb(12,183,255);
     color: rgb(61, 61, 61);
@@ -576,30 +629,24 @@ body::before {
 }
 .agro h3 {
     padding: 1px 0px;
-    margin-bottom: 20px;
-
+    margin-bottom: 60px;
 }
 .agro img {
-    height: 200px;
+    height: 300px;
     border-radius: 30px;   
 }
 .equinos {
-    width:200px;    
+    width:300px;    
 }
-
 .agro p {
-    font-size: 15px;
-    padding: 10px;
+    font-size: 18px;
+    padding: 20px;
 }
 
 
 /* VACINAS */
-.vacina-produtos {
-    display: flex;
-    justify-content: center;
-}
 .vacina {
-    width: 240px;
+    width: 400px;
     text-align: center;
     border-right: 2px solid white;
     color: white;
@@ -613,25 +660,26 @@ body::before {
     margin-bottom: 20px;
 }
 .vacina img {
-    height: 200px;
+    height: 250px;
     border-radius: 30px;
-    width: 210px;
+    width: 300px;
 }
 .vacina p {
-    font-size: 15px;
+    font-size: 18px;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 
 /* RODAPÉ */
 footer {
-    height: 100px;
+    height: 200px;
     background-image: linear-gradient(  rgb(12,183,255), rgb(66,179,229));
     display: flex;
     justify-content: center;
 }
 .border{ 
-    height: 70px;
+    height: 100px;
     width: 2px;
     background-color: white;
 }
@@ -652,11 +700,27 @@ footer {
 }
 .ian {
     display: flex;
-    margin-top: 70px;
-    margin-left: 800px;
-    width: 10%;
     font-family:cursive;
-    font-size: 10px;
-    color: white;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
     position: absolute;
+    margin-top: 150px;
+    right: 10px;
+}
+
+@keyframes animation {
+    0%{
+        background-position-x:0% ;
+    }
+    100%{
+        background-position-x:100% ;
+    }
+}
+@keyframes degrade {
+    0%{
+        background-position-x:0% ;
+    }
+    100%{
+        background-position-x:100% ;
+    }
 }
