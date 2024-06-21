@@ -9,47 +9,47 @@ let trethen = document.getElementById('p3')
 let quarten = document.getElementById('p4')
 
 let promocoes = [
-    `Bom+dia,+Queria+saber+mais+da+promoção+da+produto-1+de+100,00`,
-    `Boa+tarde,+Queria+saber+mais+da+promoção+da+produto-1+de+100,00`,
-    `Boa+noite,+Queria+saber+mais+da+promoção+da+produto-1+de+100,00`,
+    `Bom+dia,+Queria+saber+mais+da+promoção+da+Pitty.`,
+    `Boa+tarde,+Queria+saber+mais+da+promoção+da+Pitty.`,
+    `Boa+noite,+Queria+saber+mais+da+promoção+da+Pitty.`,
 
-    `Bom+dia,+Queria+saber+mais+da+promoção+da+produto-2+de+150,00`,
-    `Boa+tarde,+Queria+saber+mais+da+promoção+da+produto-2+de+150,00`,
-    `Boa+noite,+Queria+saber+mais+da+promoção+da+produto-2+de+150,00`,
+    `Bom+dia,+Queria+saber+mais+da+promoção+da+Foster.`,
+    `Boa+tarde,+Queria+saber+mais+da+promoção+da+Foster.`,
+    `Boa+noite,+Queria+saber+mais+da+promoção+da+Foster.`,
 
-    `Bom+dia,+Queria+saber+mais+da+promoção+do+produto-3+de+200,00`,
-    `Boa+tarde,+Queria+saber+mais+da+promoção+do+produto-3+de+200,00`,
-    `Boa+noite,+Queria+saber+mais+da+promoção+do+produto-3+de+200,00`,
+    `Bom+dia,+Queria+saber+mais+da+promoção+da+Matilha.`,
+    `Boa+tarde,+Queria+saber+mais+da+promoção+da+Matilha.`,
+    `Boa+noite,+Queria+saber+mais+da+promoção+da+Matilha.`,
 
-    `Bom+dia,+Queria+saber+mais+da+promoção+da+produto-4+de+250,00`,
-    `Boa+tarde,+Queria+saber+mais+da+promoção+da+prouto-4+de+250,00`,
-    `Boa+noite,+Queria+saber+mais+da+promoção+da+produto-4+de+250,00`
+    `Bom+dia,+Queria+saber+mais+da+promoção+do+Milho.`,
+    `Boa+tarde,+Queria+saber+mais+da+promoção+do+Milho.`,
+    `Boa+noite,+Queria+saber+mais+da+promoção+do+Milho.`
 ]
 
 
 if(hora >= 6 && hora <= 12){
-        firsten.innerHTML = `<a href="https://wa.me/5521995462321?text=${promocoes[0]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
-        seconden.innerHTML = `<a href="https://wa.me/5521995462321?text=${promocoes[3]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
-        trethen.innerHTML = `<a href="https://wa.me/5521995462321?text=${promocoes[6]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
-        quarten.innerHTML = `<a href="https://wa.me/5521995462321?text=${promocoes[9]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
+        firsten.innerHTML = `<a href="https://wa.me/5521995462321?text=${promocoes[0]}"><img src="./SRC/Assents/imagens/produtos em promoção/pitty.jpeg"></a>`
+        seconden.innerHTML = `<a href="https://wa.me/5521995462321?text=${promocoes[3]}"><img src="./SRC/Assents/imagens/produtos em promoção/foster.png"></a>`
+        trethen.innerHTML = `<a href="https://wa.me/5521995462321?text=${promocoes[6]}"><img src="./SRC/Assents/imagens/produtos em promoção/matilha.jpg"></a>`
+        quarten.innerHTML = `<a href="https://wa.me/5521995462321?text=${promocoes[9]}"><img src="./SRC/Assents/imagens/produtos em promoção/milho.jpeg"></a>`
     }
     else if(hora >= 13 && hora <= 17){
-        firsten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[1]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
-        seconden.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[4]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
-        trethen.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[7]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
-        quarten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[10]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
+        firsten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[1]}"><img src="./SRC/Assents/imagens/produtos em promoção/pitty.jpeg"></a>`
+        seconden.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[4]}"><img src="./SRC/Assents/imagens/produtos em promoção/foster.png"></a>`
+        trethen.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[7]}"><img src="./SRC/Assents/imagens/produtos em promoção/matilha.jpg"></a>`
+        quarten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[10]}"><img src="./SRC/Assents/imagens/produtos em promoção/milho.jpeg"></a>`
     }
     else if(hora >= 18 && hora <= 23){
-        firsten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[2]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
-        seconden.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[5]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
-        trethen.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[8]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
-        quarten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[11]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
+        firsten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[2]}"><img src="./SRC/Assents/imagens/produtos em promoção/pitty.jpeg"></a>`
+        seconden.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[5]}"><img src="./SRC/Assents/imagens/produtos em promoção/foster.png"></a>`
+        trethen.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[8]}"><img src="./SRC/Assents/imagens/produtos em promoção/matilha.jpg"></a>`
+        quarten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[11]}"><img src="./SRC/Assents/imagens/produtos em promoção/milho.jpeg"></a>`
     }
     else if(hora >= 0 && hora <= 5){
-        firsten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[2]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
-        seconden.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[5]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
-        trethen.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[8]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
-        quarten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[11]}"><img src="./SRC/Assents/imagens/produtos em promoção/fundo-nulo.png"></a>`
+        firsten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[2]}"><img src="./SRC/Assents/imagens/produtos em promoção/pitty.jpeg"></a>`
+        seconden.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[5]}"><img src="./SRC/Assents/imagens/produtos em promoção/foster.png"></a>`
+        trethen.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[8]}"><img src="./SRC/Assents/imagens/produtos em promoção/matilha.jpg"></a>`
+        quarten.innerHTML += `<a href="https://wa.me/5521995462321?text=${promocoes[11]}"><img src="./SRC/Assents/imagens/produtos em promoção/milho.jpeg"></a>`
 }
 
 
@@ -57,7 +57,6 @@ if(hora >= 6 && hora <= 12){
 function AbRacoes(){
     let modal = document.getElementById('open-one');
     modal.classList.add("abrir");
-    
 
     modal.addEventListener('click', (e) => {
         if(e.target.id === 'invisivel'|| e.target.id === 'fechar'){
@@ -70,7 +69,6 @@ function AbMedicamentos(){
     let modal = document.getElementById('open-two');
     modal.classList.add("abrir");
     
-
     modal.addEventListener('click', (e) => {
         if(e.target.id === 'invisivel'|| e.target.id === 'fechar'){
             modal.classList.remove('abrir')
@@ -82,7 +80,6 @@ function AbSuplementos(){
     let modal = document.getElementById('open-tree');
     modal.classList.add("abrir");
     
-
     modal.addEventListener('click', (e) => {
         if(e.target.id === 'invisivel'|| e.target.id === 'fechar'){
             modal.classList.remove('abrir')
@@ -93,7 +90,6 @@ function AbSuplementos(){
 function AbAgro(){
     let modal = document.getElementById('open-four');
     modal.classList.add("abrir");
-    
 
     modal.addEventListener('click', (e) => {
         if(e.target.id === 'invisivel'|| e.target.id === 'fechar'){
@@ -105,7 +101,6 @@ function AbAgro(){
 function AbVacinas(){
     let modal = document.getElementById('open-five');
     modal.classList.add("abrir");
-    
 
     modal.addEventListener('click', (e) => {
         if(e.target.id === 'invisivel'|| e.target.id === 'fechar'){
@@ -289,4 +284,19 @@ else if(hora >= 18 && hora <= 23){
 }
 else if(hora >= 0 && hora <= 5){
     filial52.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[14]}">AREAL</a>`
+}
+menu_sec = document.querySelector('.menu-secudario')
+menu = document.querySelector('.navegacao')
+x = document.querySelector('.x')
+
+function clicou(){
+    menu.style.display = 'block'
+    x.style.display = 'block'
+    menu_sec.style.display = 'none'
+}
+
+function saiu(){
+    menu.style.display = 'none'
+    x.style.display = 'none'
+    menu_sec.style.display = 'block'
 }
