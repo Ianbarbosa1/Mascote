@@ -285,18 +285,3 @@ else if(hora >= 18 && hora <= 23){
 else if(hora >= 0 && hora <= 5){
     filial52.innerHTML = `<a href="https://wa.me/5521999510269?text=${frase[14]}">AREAL</a>`
 }
-menu_sec = document.querySelector('.menu-secudario')
-menu = document.querySelector('.navegacao')
-x = document.querySelector('.x')
-
-function clicou(){
-    menu.style.display = 'block'
-    x.style.display = 'block'
-    menu_sec.style.display = 'none'
-}
-
-function saiu(){
-    menu.style.display = 'none'
-    x.style.display = 'none'
-    menu_sec.style.display = 'block'
-}
