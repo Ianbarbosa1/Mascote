@@ -1,8 +1,8 @@
 @media screen and (min-width: 450px) and (max-width:725px) {
     /* LOGO */
     .logo {
-        height: 200px;
-        width: 200px;
+        height: 120px;
+        width: 120px;
         border-radius: 100px;
     }
     .logo img {
@@ -12,61 +12,20 @@
 
     /* MENU DE DIRECIONAMENTO */
     .menu {
-        height: 250px;
+        height: 120px;
     }
     .navegacao{
-        padding:3px;
         display: none;
-        position: fixed;
-        top: 135px;
-        right:52px;
-    }
-    .navegacao a div{
-        font-size: 15px;
-        padding: 12px 12px; 
-        border: none;
-    }
-    .navegacao a div:hover { 
-        padding:12px 12px;
-    }
-
-    .menu-secudario{
-        height: 30px;
-        width: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: 50px;
-    }
-    .menu-secudario img{
-        height: 30px;
-        width: 30px;
-        cursor: pointer;
-    }
-    .x {
-        display: none;
-        height: 30px;
-        width: 30px;
-        position: absolute;
-        right: 50px;
-    }
-    .x img{
-        height: 20px;
-        margin-top: 3px;
-        
-    }
-
+    } 
 
     /* IMAGEM INICIAL - DIRETOS DE IMAGEM */
     .fundo-inicial {
-        height:600px;
+        height:390px;
     }
     .fundo-inicial img {
-        height:600px;
+        height:390px;
     }
     .titulo-fundo{
-        bottom: 200px;
         left: 250px;
     }
     .titulo-fundo img{
