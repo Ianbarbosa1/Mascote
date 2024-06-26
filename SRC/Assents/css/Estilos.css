@@ -74,13 +74,6 @@ body::before{
     padding: 17px 35px;
     transition: 1s;
 }
-.menu-secudario{
-    display: none;
-}
-.x{
-    display: none;
-}
-
 
 /* IMAGEM INICIAL - DIRETOS DE IMAGEM */
 .fundo-inicial {
@@ -235,13 +228,14 @@ body::before{
     padding: 10px;
 }
 
-
-/* PRODUTOS EM PROMOÇÃO*/
-.controle-1{
+/*CONTROLE DE DIVISÃO*/
+.controle-1, .controle-2, .controle-3, .controle-4, .controle-5, .controle-6, .controle-7{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* PRODUTOS EM PROMOÇÃO*/
 .container-light-promocao {
     width: 1000px;
     background-color:rgba(221, 221, 221, 0.521);
@@ -298,11 +292,6 @@ body::before{
 
 
 /* SOBRE NÓS */
-.controle-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .sobre-nos{
     color: rgb(255, 255, 255);
     text-align: center;
@@ -321,12 +310,7 @@ body::before{
 
 
 /* LOJAS */
-.controle-3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container-light-lojas{
+.container-light-lojas, .container-light-medicamentos, .container-light-agro{
     width: 100vw;
     height: 100vh;
     background-color:rgba(221, 221, 221, 0.568);
@@ -465,12 +449,7 @@ body::before{
 
 
 /* RAÇÕES */
-.controle-black{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container-black{
+.container-black-racoes, .container-black-suplementos, .container-black-medicamentos, .container-black-vacinas{
     width: 100%;
     background-color:rgba(0, 0, 0, 0.877);
     height:100vh;
@@ -524,18 +503,6 @@ body::before{
 
 
 /* MEDICAMENTOS */
-.controle-5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container-light{
-    width: 100%;
-    height: 100vh;
-    background-color: #dddddd73;
-    backdrop-filter: blur(20px);
-    border-radius: 10%;
-}
 .titulo-global-m {
     display: flex;
     justify-content: center;
@@ -594,11 +561,6 @@ body::before{
 
 
 /* AGROPECUÁRIA */
-.controle-7{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .agro-produtos {
     display: flex;
     justify-content: center;
