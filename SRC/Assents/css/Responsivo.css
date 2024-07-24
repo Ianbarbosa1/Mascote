@@ -51,19 +51,19 @@
         gap: 0px;
         display: block;
     }
-    .container-light-lojas {
-        height: 100%;
-    }
     .titulo-global-loja{
-        padding-top: 50px;
-        padding-bottom:50px ;
+        padding-top: 25px;
+        padding-bottom:25px ;
         font-size: 16px;
+    }
+    .container-light-lojas {
+        height: 1160px;
     }
     .loja-i-a {
         padding: 10px;
         text-align: center;
         width: 350px;
-        height: 580px;
+        height: 560px;
     }
     .titulo {
         font-size: 20px;
@@ -215,7 +215,7 @@
 
     /* VACINAS */
     .container-black-vacinas{
-        height: 850px;
+        height: 820px;
     }
     .produtos-black-vacina{
         overflow-x: scroll;
@@ -292,15 +292,21 @@
     .lojas {
         gap: 0px;
         display: block;
+        margin-left: 30px;
     }
     .container-light-lojas {
         height: 100%;
+    }
+    .titulo-global-loja{
+        padding-top: 50px;
+        padding-bottom:50px ;
+        font-size: 18px;
     }
     .loja-i-a {
         padding: 10px;
         text-align: center;
         width: 380px;
-        height: 565px;
+        height: 575px;
     }
     .titulo {
         font-size: 20px;
@@ -311,9 +317,6 @@
         font-size: 15px;
         margin-bottom: 16px;
         padding: 5px;
-    }
-    .endereco-areal p {
-        margin-left: 0px;
     }
     .horarios {
         font-size: 12px;
@@ -334,6 +337,9 @@
     }
 
     /* CONTAINERS BLACK */
+    .container-black-racoes{
+        height:740px;
+    }
     .produtos-black{
         overflow-x: scroll;
         padding-left: 170px;
@@ -353,6 +359,9 @@
     
 
     /* MEDICAMENTOS */
+    .container-light-medicamentos{
+        height: 870px;
+    }
     .medicamentos-produtos{
         overflow-x: scroll;
         padding-left: 230px;
@@ -379,6 +388,9 @@
     }
 
     /*SUPLEMENTOS*/
+    .container-black-suplementos{
+        height: 750px;
+    }
     .produtos-black-suplementos{
         overflow-x: scroll;
         padding-left:145px;
@@ -398,6 +410,9 @@
     }
 
     /* AGROPECUÁRIA */
+    .container-light-agro{
+        height: 800px;
+    }
     .agro-produtos{
         overflow-x: scroll;
         padding-left: 205px;
@@ -421,6 +436,12 @@
 
 
     /* VACINAS */
+    .container-black-vacinas{
+        height: 830px;
+    }
+    .titulo-global-b{
+        padding-top: 50px;
+    }
     .produtos-black-vacina{
         overflow-x: scroll;
         padding-left: 150px;
