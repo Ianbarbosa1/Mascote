@@ -1,386 +1,695 @@
-@media screen and (min-width: 450px) and (max-width:725px) {
-    /* LOGO */
-    .logo {
-        height: 120px;
-        width: 120px;
-        border-radius: 100px;
-    }
-    .logo img {
-        border-radius: 200px;
-    }
-
-    /* MENU DE DIRECIONAMENTO */
-    .menu {
-        height: 120px;
-    }
-    .navegacao{
-        display: none;
-    } 
-
+@media screen and (min-width: 350px) and (max-width:450px) {
     /* IMAGEM INICIAL - DIRETOS DE IMAGEM */
     .fundo-inicial {
-        height:390px;
+        height: 100dvh;
     }
-    .fundo-inicial img {
-        height:390px;
+    .titulo-fundo img {
+        height: 90px;
+        width: 340px;
+        margin-bottom: 100px;
     }
-    .titulo-fundo{
-        left: 250px;
-    }
-    .titulo-fundo img{
-        height: 70px;
-        width: 200px;
-    }
-
-    .container-black-racoes, .container-black-suplementos, .container-black-medicamentos, .container-black-vacinas{
-        height:100%;
-        padding-bottom: 10px;
-    }
-    .container-light-lojas, .container-light-medicamentos, .container-light-agro, .container-light-promocao{
-        height: 100%;
-        padding-bottom: 20px;
-    }
-    
-    /* PRODUTOS EM PROMOÇÃO*/
-    .titulo-global-pp {
-        font-size: 15px;
-        padding-top: 20px;
-        margin-bottom: 20px;
-    }
-    .promocoes-produtos{
+    .navegacao {
+        gap: 20px;
+        height: 50px;
         flex-wrap: wrap;
     }
-    .promocoes-interno{
-        width: 200px;
-        border: 0;
-    }
-    .promocoes-interno h3{
-        margin-top: 15px;
-        margin-bottom: 2px;
-        padding: 0;
-    }
-    .promocoes-interno img{
-        height: 135px;
-        width: 115px;
-        border-radius: 20px;
-        margin-bottom: 0;
-    }
 
+    /* PRODUTOS EM PROMOÇÃO*/
+    .titulo-global-pp {
+        font-size: 14px;
+    }
+    .container-light-promocao{
+        width: 100%;
+        max-height: 100%;
+    }
+    .promocoes-produtos {
+        width: 98%;
+        overflow-x: scroll;
+        margin-left: 10px;
+        padding: 0px 20px 0px 290px;
+    }
+    .promocoes-interno {
+        width: 200px;
+        height: 100%;
+        padding: 10px;
+    }
+    .promocoes-interno img {
+        height: 150px;
+        width: 140px;
+    }
+    .about h2{
+        font-size:25px;
+        margin-bottom:25px;
+    }
+    .sobre-nos{
+        padding: 0px 20px 0px 20px;
+        font-size: 18px;
+    }
 
     /* LOJAS */
-    .lojas{
+    .lojas {
         gap: 0px;
         display: block;
     }
-    .loja-i-a{
-        padding:10px;
-        text-align: center;
-    }
-    .titulo-global-loja {
-        padding: 20px;
-        margin: 20px;
-        font-size: 15px;
-    }
-    .titulo {
-        font-size:20px;
-    }
-    .endereco-imperial p, .endereco-areal p{
-        margin-right: 0px;
-        text-align:start;
-        font-size: 15px;
-        margin-bottom: 10px;
-        padding: 5px;
-    }
-    .endereco-areal p{
-        margin-left: 0px;
-        text-align:end;
-    }
-    .control{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .horarios{
-        font-size: 12px;
-        margin-top:10px;
-        gap: 15px;
-        height: 45px;
-        width: 400px;
-        border-radius: 5px;
-    }
-    .localizacao-jardim a, .localizacao-areal a{
-        height: 30px;
-        gap: 15px;
-        width: 150px;
-        margin-top: 20px;
-        margin-left: 124px;
-        margin-bottom: 50px;
-    }
-
-    /* CONTAINERS BLACK */
-    .titulo-global-b {
-        padding-top: 20px;
-        font-size: 15px;
-    }
-    .titulo-global-b h2{
-        padding: 10px 0px;
-        margin-bottom:50px;
-    }
-    .produtos-black{
-        flex-wrap: wrap; 
-        gap: 10px;
-    }
-    .produto{
-        width: 190px;
+    .container-light-lojas {
         height: 100%;
-        margin-bottom: 30px;
-        border: 0;
-        margin: 0px 20px;
     }
-    .produto img {
-        height: 150px;
-        border-radius: 20px;
-    }
-    .produto h3 {
-        padding: 1px 0px;
-        margin-bottom: 10px;
-        font-size: 15px;
-    }
-    .produto p {
-        font-size: 18px;
-        padding: 5px;
-        margin-bottom:10px;
-    }
-
-
-    /* MEDICAMENTOS */
-    .titulo-global-m {
-        padding-top: 20px;
-        font-size: 15px;
-    }
-    .titulo-global-m h2{
-        padding: 10px 0px;
-        margin-bottom:25px;
-    }
-    .medicamentos-produtos{
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .medicamentos {
-        width: 230px;
-        height:100%;
-        border: 0;
-    }
-    .medicamentos h3 {
-        margin-bottom: 15px;
-    }
-    .medicamentos img {
-        height: 140px;
-    }
-    .medicamentos p {
-        font-size: 16px;
-        padding: 6px;
-    }
-    .bula {
-        margin-top: 7px;
-        padding-bottom: 7px;
-    }
-    
-
-    /* AGROPECUÁRIA */
-    .titulo-global-c{
-        margin-bottom:20px;
+    .titulo-global-loja{
         padding-top: 50px;
-        font-size: 15px;
+        padding-bottom:50px ;
+        font-size: 16px;
     }
-    .agro-produtos {
-        flex-wrap: wrap;
-    }
-    .agro {
-        width: 350px;
-        margin: 0px 20px;
-        margin-bottom: 10px;
-        border: none;
-    }
-    .agro h3 {
-        padding: 1px 0px;
-        margin-bottom: 10px;
-    }
-    .agro img {
-        height: 150px;
-    }
-    .equinos {
-        width:150px;
-    }
-    .agro p {
-        font-size: 18px;
-        padding: 0px;
-        margin-bottom: 20px;
-    }
-
-    /* VACINAS */
-    .vacina {
-        width: 230px;
-        height: 330px;
-        margin-bottom: 20px;
-        border: none;
-    }
-    .vacina h3 {
-        padding: 1px 0px;
-        margin-bottom: 10px;
-        font-size: 15px;
-    }
-    .vacina img {
-        height: 150px;
-        border-radius: 30px;
-        width: 150px;
-    }
-    .vacina p {
-        font-size: 15px;
+    .loja-i-a {
         padding: 10px;
-        margin-bottom: 5px;
-    }
-}
-
-@media screen and (min-width: 726px) and (max-width:1050px) {
-       /* LOGO */
-       .logo {
-        display: none;
-    }
-
-    /* MENU DE DIRECIONAMENTO */
-    .menu {
-        height: 150px;
-    }
-    .navegacao{
-        padding:5px;
-    }
-    .navegacao a div{
-        font-size: 18px;
-        padding: 15px 20px;
-    }
-    .navegacao a div:hover { 
-        padding:15px 20px;
-    }
-
-    /* IMAGEM INICIAL - DIRETOS DE IMAGEM */
-    .fundo-inicial {
-        height: 90vh;
-    }
-    .fundo-inicial img {
-        height: 90vh;
-    }
-    .titulo-fundo{
-        right:10px;
-    }
-    .titulo-fundo img{
-        height: 120px;
-        width: 330px;
-    }
-    
-    /* PRODUTOS EM PROMOÇÃO*/
-    .titulo-global-pp {
-        font-size: 18px;
-    }
-    .promocoes-interno{
-        width: 200px;
-        height: 100%;
-    }
-    .promocoes-interno img{
-        height: 190px;
-        width: 140px;
-        margin-bottom:15px;
-    }
-
-    .container-black-racoes, .container-black-suplementos, .container-black-medicamentos, .container-black-vacinas{
-        height:100%;
-        padding-bottom: 10px;
-    }
-    .container-light-lojas, .container-light-medicamentos, .container-light-agro, .container-light-promocao{
-        height: 100%;
-        padding-bottom: 20px;
-    }
-
-    /* LOJAS */
-    .lojas{
-        gap: 0px;
-    }
-    .container-light-lojas{
-        height: 100%;
-    }
-    .loja-i-a{
-        padding:10px;
         text-align: center;
-        width: 380px;
-        height: 565px;
+        width: 350px;
+        height: 580px;
     }
     .titulo {
-        font-size:20px;
+        font-size: 20px;
     }
-    .endereco-imperial p, .endereco-areal p{
+    .endereco-imperial p,
+    .endereco-areal p {
         margin-right: 0px;
-        text-align:start;
-        font-size: 15px;
+        font-size: 14px;
         margin-bottom: 16px;
         padding: 5px;
     }
     .endereco-areal p{
         margin-left: 0px;
-        text-align:end;
     }
-    .horarios{
-        font-size: 12px;
+    .horarios {
+        font-size: 10px;
         margin-top: 100px;
-        gap:8px;
+        gap: 8px;
         height: 70px;
-        width: 355px;
+        width: 320px;
     }
-    .localizacao-jardim a, .localizacao-areal a{
+    .localizacao-jardim a,
+    .localizacao-areal a {
         height: 40px;
         gap: 10px;
         width: 150px;
         margin-top: 20px;
     }
-    .localizacao-areal a{
+    .localizacao-areal a {
+        margin-left: 170px;
+    }
+
+    /* CONTAINERS BLACK */
+    .container-black-racoes{
+        height: 750px;
+    }
+    .titulo-global-b {
+        padding-top: 50px;
+        font-size: 15px;
+    }
+    .titulo-global-b h2{
+        margin-bottom:100px;
+    }
+    .produtos-black{
+        overflow-x: scroll;
+        padding-left: 280px;
+    }
+    .produto{
+        padding: 10px;
+    }
+    .produto img {
+        height: 210px;
+        width: 140px;
+    }
+    .produto p {
+        font-size: 14px;
+        padding: 4px;
+        margin-bottom:5px;
+    }
+    
+
+    /* MEDICAMENTOS */
+    .medicamentos-produtos{
+        overflow-x: scroll;
+        padding-left: 330px;
+    }
+    .container-light-medicamentos{
+        height: 770px;
+    }
+    .titulo-global-m{
+        font-size: 15px;
+        padding-top: 50px;
+    }
+    .titulo-global-m h2{
+        margin-bottom: 50px;
+    }
+    .medicamentos {
+        width: 190px;
+        height: 450px;
+        margin-bottom: 0px;
+        padding: 5px;
+    }
+    .medicamentos h3 {
+        font-size: 18px;
+        padding: 7px;
+    }
+    .medicamentos img {
+        height: 160px;
+    }
+    .medicamentos p {
+        font-size: 13px;
+        padding: 7px;
+    }
+    .bula {
+        margin-top: 7px;
+    }
+
+    /*SUPLEMENTOS*/
+    .container-black-suplementos{
+        height: 700px;
+    }
+    .produtos-black-suplementos{
+        overflow-x: scroll;
+        padding-left:285px;
+    }
+    .suplementos{
+        width: 200px;
+        height: 350px;
+        padding: 5px;
+        margin-bottom: 0px;
+    }
+    .suplementos img {
+        height: 150px;
+    }
+    .suplementos p {
+        font-size: 17px;
+        padding: 7px;;
+    }
+
+    /* AGROPECUÁRIA */
+    .container-light-agro{
+        height: 700px;
+    }
+    .titulo-global-c{
+        padding-top: 50px;
+        font-size: 15px;
+    }
+    .agro-produtos{
+        overflow-x: scroll;
+        padding-left: 270px;
+    }
+    .agro {
+        width: 250px;
+        height: 350px;
+        margin-bottom: 25px;
+        padding: 5px;
+    }
+    .agro h3 {
+        padding: 1px 0px;
+        margin-bottom: 50px;
+    }
+    .agro img {
+        height: 150px;
+    }
+    .equinos {
+        width: 150px;
+    }
+
+
+    /* VACINAS */
+    .container-black-vacinas{
+        height: 850px;
+    }
+    .produtos-black-vacina{
+        overflow-x: scroll;
+        padding-left: 250px;
+    }
+    .vacina {
+        width: 200px;
+        height: 450px;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+    .vacina img {
+        height: 140px;
+        width: 140px;
+    }
+    .vacina p {
+        font-size: 15px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* RODAPÉ */
+    .end {
+        font-size: 10px;
+        gap: 10px;
+    }
+    .end img {
+        height: 25px;
+        width:100px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width:550px) {
+    /* IMAGEM INICIAL - DIRETOS DE IMAGEM */
+    .fundo-inicial {
+        height: 100dvh;
+    }
+    .titulo-fundo img {
+        height: 120px;
+        width: 390px;
+        margin-bottom: 100px;
+    }
+    .navegacao {
+        gap: 20px;
+        height: 50px;
+        flex-wrap: wrap;
+    }
+
+    /* PRODUTOS EM PROMOÇÃO*/
+    .titulo-global-pp {
+        font-size: 18px;
+    }
+    .container-light-promocao {
+        width: 100%;
+    }
+    .promocoes-produtos {
+        width: 98%;
+        overflow-x: scroll;
+        margin-left: 10px;
+        padding: 0px 20px 0px 200px;
+    }
+    .promocoes-interno {
+        width: 200px;
+        height: 100%;
+        padding: 10px;
+    }
+    .promocoes-interno img {
+        height: 190px;
+        width: 150px;
+    }
+
+    /* LOJAS */
+    .lojas {
+        gap: 0px;
+        display: block;
+    }
+    .container-light-lojas {
+        height: 100%;
+    }
+    .loja-i-a {
+        padding: 10px;
+        text-align: center;
+        width: 380px;
+        height: 565px;
+    }
+    .titulo {
+        font-size: 20px;
+    }
+    .endereco-imperial p,
+    .endereco-areal p {
+        margin-right: 0px;
+        font-size: 15px;
+        margin-bottom: 16px;
+        padding: 5px;
+    }
+    .endereco-areal p {
+        margin-left: 0px;
+    }
+    .horarios {
+        font-size: 12px;
+        margin-top: 100px;
+        gap: 8px;
+        height: 70px;
+        width: 355px;
+    }
+    .localizacao-jardim a,
+    .localizacao-areal a {
+        height: 40px;
+        gap: 10px;
+        width: 150px;
+        margin-top: 20px;
+    }
+    .localizacao-areal a {
         margin-left: 202px;
     }
 
-    /* CONTAINERS BLACK */ 
-    .titulo-global-b {
-        padding-top: 100px;
-        font-size: 18px;
-    }
-    .titulo-global-b h2{
-        padding: 10px 0px;
-        margin-bottom:100px;
+    /* CONTAINERS BLACK */
+    .produtos-black{
+        overflow-x: scroll;
+        padding-left: 170px;
     }
     .produto{
-        width: 187px;
-        height: 390px;
-        margin-bottom: 50px;
+        padding: 10px;
     }
     .produto img {
-        height: 170px;
+        height: 210px;
+        width: 140px;
+    }
+    .produto p {
+        font-size: 14px;
+        padding: 4px;
+        margin-bottom:5px;
+    }
+    
+
+    /* MEDICAMENTOS */
+    .medicamentos-produtos{
+        overflow-x: scroll;
+        padding-left: 230px;
+    }
+    .medicamentos {
+        width: 190px;
+        height: 450px;
+        margin-bottom: 0px;
+        padding: 5px;
+    }
+    .medicamentos h3 {
+        font-size: 18px;
+        padding: 7px;
+    }
+    .medicamentos img {
+        height: 160px;
+    }
+    .medicamentos p {
+        font-size: 13px;
+        padding: 7px;
+    }
+    .bula {
+        margin-top: 7px;
+    }
+
+    /*SUPLEMENTOS*/
+    .produtos-black-suplementos{
+        overflow-x: scroll;
+        padding-left:145px;
+    }
+    .suplementos{
+        width: 200px;
+        height: 350px;
+        padding: 5px;
+        margin-bottom: 0px;
+    }
+    .suplementos img {
+        height: 150px;
+    }
+    .suplementos p {
+        font-size: 17px;
+        padding: 7px;;
+    }
+
+    /* AGROPECUÁRIA */
+    .agro-produtos{
+        overflow-x: scroll;
+        padding-left: 205px;
+    }
+    .agro {
+        width: 250px;
+        height: 350px;
+        margin-bottom: 25px;
+        padding: 5px;
+    }
+    .agro h3 {
+        padding: 1px 0px;
+        margin-bottom: 50px;
+    }
+    .agro img {
+        height: 150px;
+    }
+    .equinos {
+        width: 150px;
+    }
+
+
+    /* VACINAS */
+    .produtos-black-vacina{
+        overflow-x: scroll;
+        padding-left: 150px;
+    }
+    .vacina {
+        width: 200px;
+        height: 450px;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+    .vacina img {
+        height: 140px;
+        width: 140px;
+    }
+    .vacina p {
+        font-size: 15px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width:750px) {
+    /* IMAGEM INICIAL - DIRETOS DE IMAGEM */
+    .fundo-inicial {
+        height: 100vh;
+    }
+    .titulo-fundo img {
+        height: 150px;
+        width: 500px;
+        margin-bottom: 100px;
+    }
+    .navegacao {
+        font-family: 'Montserrat';
+        gap: 20px;
+        height: 50px;
+        flex-wrap: wrap;
+    }
+
+    /* PRODUTOS EM PROMOÇÃO*/
+    .promocoes-produtos {
+        width: 100%;
+    }
+    .titulo-global-pp {
+        font-size: 18px;
+    }
+    .promocoes-interno {
+        width: 130px;
+        height: 100%;
+    }
+    .promocoes-interno img {
+        height: 160px;
+        width: 110px;
+    }
+
+    /* LOJAS */
+    .lojas {
+        gap: 0px;
+    }
+    .container-light-lojas {
+        height: 100%;
+    }
+    .loja-i-a {
+        padding: 5px;
+        text-align: center;
+        width: 260px;
+        height: 100%;
+    }
+    .titulo {
+        font-size: 17px;
+    }
+    .endereco-imperial p,
+    .endereco-areal p {
+        margin-right: 0px;
+        font-size: 13px;
+        margin-bottom: 16px;
+        padding: 5px;
+    }
+    .endereco-areal p {
+        margin-left: 0px;
+    }
+
+    .horarios {
+        font-size: 9px;
+        margin-top: 100px;
+        gap: 1px;
+        height: 65px;
+        width: 260px;
+    }
+    .localizacao-jardim a,
+    .localizacao-areal a {
+        height: 40px;
+        gap: 10px;
+        width: 150px;
+        margin-top: 20px;
+    }
+    .localizacao-areal a {
+        margin-left: 100px;
+    }
+
+    /* CONTAINERS BLACK */
+    .produto {
+        width: 250px;
+        height: 380px;
+        margin-bottom: 30px;
+    }
+    .produto img {
+        height: 130px;
     }
 
     /* MEDICAMENTOS */
-    .titulo-global-m {
-        padding-top: 100px;
-        font-size: 18px;
-    }
-    .titulo-global-m h2{
-        padding: 10px 0px;
-        margin-bottom:100px;
-    }
     .medicamentos {
-        width: 187px;
-        height: 440px;
-    }
-    .medicamentos h3 {
-        margin-bottom: 20px;
+        width: 150px;
+        height: 450px;
+        margin-bottom: 0px;
     }
     .medicamentos img {
-        height: 155px;
+        height: 130px;
+    }
+    .medicamentos p {
+        font-size: 17px;
+        padding: 7px;
+    }
+    .bula {
+        margin-top: 7px;
+    }
+
+    /*SUPLEMENTOS*/
+    .suplementos{
+        width: 150px;
+        height: 400px;
+        margin-bottom: 0px;
+    }
+    .suplementos img {
+        height: 130px;
+    }
+    .suplementos p {
+        font-size: 17px;
+        padding: 7px;;
+    }
+
+    /* AGROPECUÁRIA */
+    .agro {
+        width: 280px;
+        height: 350px;
+        margin-bottom: 25px;
+    }
+    .agro h3 {
+        padding: 1px 0px;
+        margin-bottom: 50px;
+    }
+    .agro img {
+        height: 120px;
+    }
+    .equinos {
+        width: 150px;
+    }
+
+    /* VACINAS */
+    .vacina {
+        width: 150px;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+    .vacina img {
+        height: 140px;
+        width: 120px;
+    }
+    .vacina p {
+        font-size: 15px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width:1050px) {
+    /* IMAGEM INICIAL - DIRETOS DE IMAGEM */
+    .fundo-inicial {
+        height: 100vh;
+    }
+    .titulo-fundo img {
+        height: 150px;
+        width: 500px;
+        margin-bottom: 100px;
+    }
+    .navegacao {
+        font-family: 'Montserrat';
+        gap: 20px;
+        height: 50px;
+        flex-wrap: wrap;
+    }
+
+    /* PRODUTOS EM PROMOÇÃO*/
+    .container-light-promocao, .container-black-sobre-nos, .container-black-racoes, .container-light-medicamentos, .container-black-suplementos, .container-light-agro, .container-black-vacinas{
+        height: 100%;
+    }
+    .titulo-global-pp {
+        font-size: 18px;
+    }
+    .promocoes-interno {
+        width: 170px;
+        height: 100%;
+    }
+    .promocoes-interno img {
+        height: 190px;
+        width: 140px;
+    }
+
+    /* LOJAS */
+    .lojas {
+        gap: 0px;
+    }
+    .container-light-lojas {
+        height: 100%;
+    }
+    .loja-i-a {
+        padding: 10px;
+        text-align: center;
+        width: 380px;
+        height: 565px;
+    }
+    .titulo {
+        font-size: 20px;
+    }
+    .endereco-imperial p,
+    .endereco-areal p {
+        margin-right: 0px;
+        font-size: 15px;
+        margin-bottom: 16px;
+        padding: 5px;
+    }
+    .endereco-areal p {
+        margin-left: 0px;
+    }
+    .horarios {
+        font-size: 12px;
+        margin-top: 100px;
+        gap: 8px;
+        height: 70px;
+        width: 355px;
+    }
+    .localizacao-jardim a,
+    .localizacao-areal a {
+        height: 40px;
+        gap: 10px;
+        width: 150px;
+        margin-top: 20px;
+    }
+    .localizacao-areal a {
+        margin-left: 202px;
+    }
+
+    /* CONTAINERS BLACK */
+    .produto {
+        width: 250px;
+        height: 380px;
+        margin-bottom: 30px;
+    }
+    .produto img {
+        height: 180px;
+    }
+
+    /* MEDICAMENTOS */
+    .medicamentos {
+        width: 200px;
+        height: 450px;
+        margin-bottom: 0px;
+    }
+    .medicamentos img {
+        height: 140px;
     }
     .medicamentos p {
         font-size: 17px;
@@ -390,37 +699,43 @@
         margin-top: 7px;
     }
     
-    /* AGROPECUÁRIA */
-    .titulo-global-c{
-        margin-bottom:85px;
-        padding-top: 150px;
-        font-size: 18px;
+    /*SUPLEMENTOS*/
+    .suplementos{
+        width: 200px;
+        height: 400px;
+        margin-bottom: 0px;
     }
+    .suplementos img {
+        height: 160px;
+    }
+    .suplementos p {
+        font-size: 17px;
+        padding: 7px;;
+    }
+
+    /* AGROPECUÁRIA */
     .agro {
-        width: 250px;
+        width: 350px;
+        height: 350px;
         margin-bottom: 25px;
     }
     .agro h3 {
         padding: 1px 0px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
     .agro img {
-        height: 155px;   
+        height: 150px;
     }
     .equinos {
-        width:200px;
+        width: 200px;
     }
 
 
     /* VACINAS */
     .vacina {
-        width: 187px;
-        height: 440px;
+        width: 250px;
+        height: 400px;
         margin-bottom: 30px;
-    }
-    .vacina h3 {
-        padding: 1px 0px;
-        margin-bottom: 20px;
     }
     .vacina img {
         height: 170px;
@@ -433,229 +748,147 @@
     }
 }
 
-@media screen and (min-width:1051px) and (max-width: 1400px) {
-    
-    /* LOGO */
-    .logo {
-        height: 90px;
-        width: 140px;
-    }
-
-    /* MENU DE DIRECIONAMENTO */
-    .menu {
-        height: 100px;
-    }
-    .navegacao{
-        padding:6px;
-    }
-    .navegacao a div{
-        font-size: 16px;
-        padding: 12px 29px;
-    }
-    .navegacao a div:hover { 
-        padding: 12px 29px;
-    }
-
+@media screen and (min-width:1051px) and (max-width: 1500px) {
     /* IMAGEM INICIAL - DIRETOS DE IMAGEM */
     .fundo-inicial {
-        height: 100%;
+        height: 100vh;
     }
-    .fundo-inicial img {
-        height: 100%;
-    }
-    .titulo-fundo{
-        right:50px
-    }
-    .titulo-fundo img{
-        height: 140px;
-        width: 390px;
+    .titulo-fundo img {
+        height: 150px;
+        width: 500px;
+        margin-bottom: 100px;
     }
 
     /* PRODUTOS EM PROMOÇÃO*/
     .titulo-global-pp {
         font-size: 18px;
     }
-
-    .container-black-racoes, .container-black-suplementos, .container-black-medicamentos, .container-black-vacinas{
-        height:100%;
-        padding-bottom: 10px;
-    }
-    .container-light-lojas, .container-light-medicamentos, .container-light-agro{
+    .promocoes-interno {
+        width: 200px;
         height: 100%;
-        padding-bottom: 20px;
+    }
+    .promocoes-interno img {
+        height: 190px;
+        width: 140px;
     }
 
     /* LOJAS */
-    .titulo-global-loja{
-        padding-top: 90px;
-        padding-bottom:90px ;
-        font-size: 18px;
-    }
-    .lojas{
+    .lojas {
         gap: 0px;
     }
-    .loja-i-a{
+    .container-light-lojas {
+        height: 100%;
+    }
+    .loja-i-a {
         padding: 10px;
-        width: 470px;
+        text-align: center;
+        width: 380px;
         height: 565px;
     }
     .titulo {
-        font-size:23px;
+        font-size: 20px;
     }
-    .endereco-imperial p, .endereco-areal p{
+    .endereco-imperial p,
+    .endereco-areal p {
         margin-right: 0px;
         font-size: 15px;
         margin-bottom: 16px;
-        padding: 10px;
+        padding: 5px;
     }
-    .horarios{
-        gap: 15px;
-        height: 65px;
-        width: 450px;
+    .endereco-areal p {
+        margin-left: 0px;
     }
-    .localizacao-jardim a, .localizacao-areal a {
+    .horarios {
+        font-size: 12px;
+        margin-top: 100px;
+        gap: 8px;
+        height: 70px;
+        width: 355px;
+    }
+    .localizacao-jardim a,
+    .localizacao-areal a {
         height: 40px;
         gap: 10px;
         width: 150px;
         margin-top: 20px;
     }
-    .localizacao-areal a{
-        margin-left: 300px;
-    }
-
-    /* BOTÃO DE SAIBA MAIS */
-    .compra{
-        margin-top: 20px;
-    }
-    .compra p {
-        padding: 10px 20px;
-        margin-top: 50px;
-    }
-    .compra p:hover {
-        color: black;
-        padding: 11px 21px;
+    .localizacao-areal a {
+        margin-left: 202px;
     }
 
     /* CONTAINERS BLACK */
-    .titulo-global-b {
-        padding-top: 100px;
-        font-size: 18px;
-    }
-    .titulo-global-b h2{
-        padding: 10px 0px;
-        margin-bottom:100px;
-    }
-    .produto{
-        width: 300px;
-        margin-bottom: 50px;
+    .produto {
+        width: 250px;
+        height: 380px;
+        margin-bottom: 30px;
     }
     .produto img {
-        height: 220px;
+        height: 200px;
     }
 
     /* MEDICAMENTOS */
-    .titulo-global-m {
-        padding-top: 100px;
-        font-size: 18px;
-    }
-    .titulo-global-m h2{
-        padding: 10px 0px;
-        margin-bottom:100px;
-    }
     .medicamentos {
-        width: 300px;
+        width: 250px;
+        height: 450px;
+        margin-bottom: 0px;
     }
     .medicamentos img {
-        height: 220px;
+        height: 200px;
+    }
+    .medicamentos p {
+        font-size: 17px;
+        padding: 7px;
+    }
+    .bula {
+        margin-top: 7px;
     }
 
-    /* AGROPECUÁRIA */
-    .titulo-global-c{
-        margin-bottom:85px;
-        padding-top: 150px;
-        font-size: 18px;
+    /*SUPLEMENTOS*/
+    .suplementos{
+        width: 250px;
+        height: 400px;
+        margin-bottom: 0px;
     }
+    .suplementos img {
+        height: 200px;
+    }
+    .suplementos p {
+        font-size: 17px;
+        padding: 7px;;
+    }
+
+
+    /* AGROPECUÁRIA */
     .agro {
-        width: 400px;
+        width: 450px;
+        height: 350px;
         margin-bottom: 25px;
     }
     .agro h3 {
         padding: 1px 0px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
     .agro img {
-        height: 220px;
-        border-radius: 30px;   
+        height: 200px;
     }
     .equinos {
-        width:220px;    
+        width: 200px;
     }
+
 
     /* VACINAS */
     .vacina {
-        width: 400px;
-        height: 420px;
+        width: 250px;
+        height: 400px;
         margin-bottom: 30px;
     }
-    .vacina h3 {
-        padding: 1px 0px;
-        margin-bottom: 20px;
-    }
     .vacina img {
-        height: 200px;
-        border-radius: 30px;
-        width: 200px;
+        height: 170px;
+        width: 170px;
     }
     .vacina p {
         font-size: 17px;
         padding: 10px;
         margin-bottom: 10px;
-    }
-}
-
-@media screen and (min-width:1401px) and (max-width:1700px) {
-        /* LOGO */
-    .logo {
-        height: 100px;
-        width: 180px;
-    }
-
-    /* MENU DE DIRECIONAMENTO */
-    .menu {
-        height: 100px;
-    }
-    .navegacao{
-        padding:6px;
-    }
-    .navegacao a div{
-        font-size: 16px;
-        padding: 15px 32px;
-    }
-    .navegacao a div:hover {
-        padding: 15px 32px;
-    }
-
-
-    /* IMAGEM INICIAL - DIRETOS DE IMAGEM */
-    .fundo-inicial {
-        height: 90vh;
-    }
-    .fundo-inicial img {
-        height: 90vh;
-    }
-    .titulo-fundo{
-        right:150px
-    }
-    .titulo-fundo img{
-        height: 140px;
-        width: 400px;
-    }
-    .container-black-racoes, .container-black-suplementos, .container-black-medicamentos, .container-black-vacinas{
-        height:100%;
-        padding-bottom: 10px;
-    }
-    .container-light-lojas, .container-light-medicamentos, .container-light-agro{
-        height: 100%;
-        padding-bottom: 20px;
     }
 }
