@@ -633,6 +633,13 @@
         flex-wrap: wrap;
     }
 
+    .about h2{
+        margin:25px 0px 25px 0px;
+    }
+    .sobre-nos{
+        margin: 20px 0px 50px 0px;
+    }
+
     /* PRODUTOS EM PROMOÇÃO*/
     .container-light-promocao, .container-black-sobre-nos, .container-black-racoes, .container-light-medicamentos, .container-black-suplementos, .container-light-agro, .container-black-vacinas{
         height: 100%;
