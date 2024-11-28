@@ -34,7 +34,7 @@ body {
 /*BACK - HOME */
 .home {
     content: '';
-    background-image: url(../imagens/fundos/dogs\ and\ cats.png);
+    background-image: url(../imagens/fundos/dogs\ and\ cats.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
