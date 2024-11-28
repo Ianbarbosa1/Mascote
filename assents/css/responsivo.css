@@ -64,7 +64,15 @@
     }
     .seta{
         width: 40px;
-        margin: 5px;
+        position: absolute;
+        margin: 500px 0px 0px 0px;
+        z-index: +5;
+    }
+    #se1, #se2, #se3, #se4, #se5{
+        right: 50px;
+    }
+    #sd1, #sd2, #sd3, #sd4, #sd5{
+        left: 50px;
     }
     .troca-produtos{
         width: 100%;
@@ -75,7 +83,7 @@
         justify-content: start;
     }
     .produtos{
-        width: 60%;
+        width: 95%;
     }
     .produto{
         width: 180px;
@@ -86,13 +94,15 @@
     .descricao{
         display: none;
     }
+    .indicador{
+        margin-top: 30px;
+    }
 
     .outros-produtos{
         width: 100%;
-        margin-top: 50px;
-        gap: 10px;
-        flex-wrap: wrap;
+        gap: 20px 0px;
     }
+
     
     .distribuidores-interno{
         flex-wrap: wrap;
@@ -172,7 +182,15 @@
     }
     .seta{
         width: 40px;
-        margin: 15px;
+        position: absolute;
+        margin: 500px 0px 0px 0px;
+        z-index: +5;
+    }
+    #se1, #se2, #se3, #se4, #se5{
+        right: 50px;
+    }
+    #sd1, #sd2, #sd3, #sd4, #sd5{
+        left: 50px;
     }
     .troca-produtos{
         width: 100%;
@@ -183,7 +201,7 @@
         justify-content: start;
     }
     .produtos{
-        width: 70%;
+        width: 95%;
     }
     .produto{
         width: 200px;
@@ -194,12 +212,13 @@
     .descricao{
         display: none;
     }
+    .indicador{
+        margin-top: 30px;
+    }
 
     .outros-produtos{
         width: 100%;
-        margin-top: 50px;
-        gap: 10px;
-        flex-wrap: wrap;
+        gap: 20px 0px;
     }
     
     .distribuidores-interno{
@@ -262,30 +281,39 @@
     }
 
     .seta{
+        position: absolute;
+        margin-top: 500px;
         width: 40px;
-        margin: 0px;
+        z-index: +5;
+    }
+    #se1, #se2, #se3, #se4, #se5{
+        right: 50px;
+    }
+    #sd1, #sd2, #sd3, #sd4, #sd5{
+        left: 50px;
     }
     .produtos-interno{
         gap: 10px;
         width: 100%;
     }
     .produto{
-        width: 130px;
+        width: 150px;
     }
     .produto img{
         height:130px;
     }
     .descricao{
-        width: 140px;
+        width: 165px;
+    }
+    .indicador{
+        margin-top: 30px;
     }
 
     .outros-produtos{
         width: 100%;
-        margin-top: 50px;
-        gap: 20px;
-        flex-wrap: wrap;
+        gap: 50px 10px;
     }
-    
+
     .distribuidores-interno{
         flex-wrap: wrap;
         gap: 20px;
