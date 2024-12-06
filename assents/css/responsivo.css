@@ -3,9 +3,17 @@
         font-size: 25px;
     }
 
-    .logo{
-        height: 120px;
-        width: 350px;
+    .menu{
+        padding: 0px 5px;
+    }
+    .menu img{
+        height: 45px;
+    }
+    .call-us{
+        padding: 10px 10px;
+    }
+    .first-titulo{
+        font-size: 25px;
     }
 
     .separador{
@@ -128,11 +136,10 @@
 
 @media screen and (min-width: 480px) and (max-width:689px){
 
-    .logo{
-        height: 165px;
-        width: 95%;
+    .first-titulo{
+        font-size: 35px;
     }
-
+    
     .promocoes-produtos{
         width: 100%;
         overflow-x: scroll;
