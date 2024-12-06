@@ -1,12 +1,28 @@
 /*ANIMAÇÃO INICIAL*/
-let logo =  document.querySelector('.logo')
+let frase = document.querySelector('.first-titulo')
+let mudar = document.querySelector('.mudanca1')
 
 setTimeout(() => {
-    logo.style.transition = 'all 1s ease-in-out'
-    logo.style.opacity = '1'
-    logo.style.transform = 'translateY(0px)'
-}, 1500);
+    frase.style.transition = 'all 1s ease-out'
+    frase.style.opacity = '1'
+    frase.style.transform = 'translateY(0px)'
+}, 2000);
 
+setTimeout(() => {
+    mudar.style.transition = 'all 1s ease-out'
+    mudar.style.opacity = '0'
+}, 5000);
+setTimeout(() => {
+    mudar.innerHTML = 'produtos de qualidade'
+    mudar.style.opacity = '1'
+}, 6000);
+setTimeout(() => {
+    mudar.style.opacity = '0'
+}, 9000);
+setTimeout(() => {
+    mudar.innerHTML = 'atendimento de qualidade'
+    mudar.style.opacity = '1'
+}, 10000);
 
 
 
@@ -55,13 +71,6 @@ setInterval(() => {
 }, 6000);
 
 
-
-
-
-
-
-
-
 /*MUDANÇA DOS PRODUTOS*/
 /*ICONES*/
 let sd1 = document.querySelector('#sd1')
@@ -96,8 +105,6 @@ let i2 = document.querySelector('#i2')
 let i3 = document.querySelector('#i3')
 let i4 = document.querySelector('#i4')
 let i5 = document.querySelector('#i5')
-
-console.log(racoes, medicamentos, suplementos, agropecuaria, vacinas)
 
 function movimento1(){
     /*SETAS*/
@@ -296,8 +303,3 @@ function movimento8(){
     i1.style.backgroundColor = '#0EABCE'
     i1.style.border = 'none'
 }
-
-
-
-
-
