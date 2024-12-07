@@ -74,6 +74,9 @@ body {
     opacity: 0;
     transform: translateY(100px);
 }
+.first-titulo p{
+    color: #0EABCE;
+}
 .mudanca1, .mudanca2, .mudanca3{
     font-family: "Varela Round", sans-serif;
     font-weight: 400;
